@@ -9,3 +9,4 @@ The AWS Virtual Private Cloud (VPC) ecosystem enables the creation of well-isola
 
 [[aws/vpc/design-cases/A Simple Private Subnet with EC2 and RDS\|A Simple Private Subnet with EC2 and RDS]]
 
+[[aws/vpc/design-cases/A Simple Public Subnet\|A Simple Public Subnet]]
