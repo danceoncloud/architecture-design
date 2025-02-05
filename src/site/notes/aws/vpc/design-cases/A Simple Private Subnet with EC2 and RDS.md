@@ -5,6 +5,7 @@
 **Use Case**: a simple private subnet with AWS services inside talking to each other. 
 **Components**: [[aws/vpc/atomic-elements/subnet\|subnet]]  [[aws/vpc/atomic-elements/route-table\|route-table]] 
 
+
 ![Private Subnet.png](/img/user/aws/vpc/png/Private%20Subnet.png)
 **Security**
 Security of EC2 is controlled by [[aws/vpc/atomic-elements/security-group\|security-group]].
