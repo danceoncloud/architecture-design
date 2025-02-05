@@ -6,4 +6,5 @@
 **Components**: [[aws/vpc/atomic-elements/subnet\|subnet]]  [[aws/vpc/atomic-elements/route-table\|route-table]]  [[aws/vpc/atomic-elements/internet-gateway\|internet-gateway]] [[aws/vpc/atomic-elements/nat-gateway\|nat-gateway]]
 <br>
 
+
 ![Private Subnet Solicits Public Internet.png](/img/user/aws/vpc/png/Private%20Subnet%20Solicits%20Public%20Internet.png)
