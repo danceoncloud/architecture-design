@@ -8,4 +8,4 @@
 
 ![Private Subnet Solicits Public Internet.png|700](/img/user/aws/vpc/png/Private%20Subnet%20Solicits%20Public%20Internet.png)
 
-![[Private Subnet Solicits Public Internet.svg \| 800]]
+[[Private Subnet Solicits Public Internet.svg \|800]]
