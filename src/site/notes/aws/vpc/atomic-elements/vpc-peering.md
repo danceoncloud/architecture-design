@@ -3,6 +3,7 @@
 ---
 
 
+
 Allows private one-to-one communications between VPCs through AWS global backbone network.
 
 VPCs can reside in different AWS regions or from different AWS accounts.
