@@ -13,6 +13,8 @@ Private IP of instance will be replaced by Elastic IP of NAT device.
 #NAT_Gateway
 AWS-managed Network Address Translate service.
 NAT gateway is created in availability zone.
+#### Public NAT Gateway
+
 ![NAT device.png](/img/user/aws/vpc/png/NAT%20device.png)
 
 
