@@ -15,7 +15,7 @@ AWS-managed Network Address Translate service.
 NAT gateway is created in availability zone.
 #### Public NAT Gateway
 
-![NAT device.png](/img/user/aws/vpc/png/NAT%20device.png)
+![NAT Gateway.png](/img/user/aws/vpc/png/NAT%20Gateway.png)
 
 
 #NAT_Instance
