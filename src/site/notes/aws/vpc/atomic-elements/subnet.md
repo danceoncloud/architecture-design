@@ -18,6 +18,7 @@ The first 4 ip address and the last IP address in each subnet are reserved by AW
 4. Isolated subnet: has no route to outside of its vpc.
 
 
+
 #### **Public Subnet**
 
 <div class="transclusion internal-embed is-loaded"><div class="markdown-embed">
