@@ -14,7 +14,7 @@
 **Terraform code** ready to use
 
 <br>
-<br>
+
 <br>
 
 ## Major Topics
