@@ -15,4 +15,6 @@ The AWS Virtual Private Cloud (VPC) ecosystem enables the creation of well-isola
 [[aws/vpc/use-cases/Private Subnet Solicits Public Internet\|Private Subnet Solicits Public Internet]]
 
 [[aws/vpc/use-cases/Communication between VPCs through VPC Peering\|Communication between VPCs through VPC Peering]]
-<br>
+
+[[aws/vpc/use-cases/Communication between VPCs through Transit Gateway\|Communication between VPCs through Transit Gateway]]
+
