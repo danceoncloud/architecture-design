@@ -12,4 +12,4 @@ a static IPv4 address associated with your AWS account.
 auto-assigned from Amazon's pool of public IPv4 addresses, and is not associated with your AWS account. 
 
 
-![Public IPv4 Address.png](/img/user/aws/vpc/png/Public%20IPv4%20Address.png)
+![Public IPv4 Address.png](/img/user/aws/vpc/png/atomic-elements/Public%20IPv4%20Address.png)

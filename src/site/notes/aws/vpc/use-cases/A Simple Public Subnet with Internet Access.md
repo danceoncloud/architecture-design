@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/aws/vpc/use-cases/a-simple-public-subnet-with-internet-access/"}
 ---
 
-**User Case**: a simple public subnet allowing traffic with the internet
+**Use Case**: a simple public subnet allowing traffic with the internet
 **Components**: [[aws/vpc/atomic-elements/subnet\|subnet]]  [[aws/vpc/atomic-elements/route-table\|route-table]]  [[aws/vpc/atomic-elements/internet-gateway\|internet-gateway]]
 
 ![Public Subnet.png](/img/user/aws/vpc/png/Public%20Subnet.png)

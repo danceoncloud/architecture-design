@@ -11,7 +11,7 @@ VPCs can reside in different AWS regions or from different AWS accounts.
 Using [[aws/vpc/atomic-elements/route-table\|route-table]] and [[aws/vpc/atomic-elements/security-group\|security-group]]  for traffic flow.
 
 
-![VPC Peering.png](/img/user/aws/vpc/png/VPC%20Peering.png)
+![VPC Peering.png](/img/user/aws/vpc/png/atomic-elements/VPC%20Peering.png)
 
 
 **Non-transitive**

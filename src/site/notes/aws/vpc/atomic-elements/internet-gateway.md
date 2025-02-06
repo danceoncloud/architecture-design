@@ -13,4 +13,4 @@ Instance always has private IP address and it must have [[aws/vpc/atomic-element
 
 Internet Gateway applied Network Address Translate(NAT) between private and public/elastic ip address.
 
-![Internet Gateway and NAT.png](/img/user/aws/vpc/png/Internet%20Gateway%20and%20NAT.png)
+![Internet Gateway and NAT.png](/img/user/aws/vpc/png/atomic-elements/Internet%20Gateway%20and%20NAT.png)
