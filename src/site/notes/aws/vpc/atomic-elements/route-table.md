@@ -10,6 +10,6 @@
 
 #### Types
 - subnet route table
-- gateway route table: [[aws/vpc/atomic-elements/internet-gateway\|internet-gateway]] or [[virtual private gateway\|virtual private gateway]]
+- gateway route table: [[aws/vpc/atomic-elements/internet-gateway\|internet-gateway]] or virtual private gateway
 - transit gateway route table: [[aws/vpc/atomic-elements/transit-gateway\|transit-gateway]]
 - local gateway route table: outposts local gateway
