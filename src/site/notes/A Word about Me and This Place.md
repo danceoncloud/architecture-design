@@ -21,7 +21,8 @@
 
 ![resume.excalidraw.png](/img/user/resume/resume.excalidraw.png)
 
-
+<br>
+<br>
 
 ## Major Topics
 
