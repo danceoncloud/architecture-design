@@ -14,7 +14,7 @@
 **Terraform code** ready to use
 
 <br>
-<br
+<br>
 <br>
 
 ## Who AM I?
