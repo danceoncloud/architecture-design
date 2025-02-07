@@ -14,22 +14,17 @@
 **Terraform code** ready to use
 
 <br>
-
-<br>
-
-## Major Topics
-
-### [[aws/AWS VPC Ecosystem and Use Cases\|AWS VPC Ecosystem and Use Cases]]
-
-<br>
-<br>
-<br>
 <br
 <br>
 ## Who AM I?
 
-![resume.excalidraw.png|1000](/img/user/resume/resume.excalidraw.png)
+![resume.excalidraw.png](/img/user/resume/resume.excalidraw.png)
 
+
+
+## Major Topics
+
+### [[aws/AWS VPC Ecosystem and Use Cases\|AWS VPC Ecosystem and Use Cases]]
 
 
 
