@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/aws/vpc/atomic-elements/internet-gateway/"}
+{"dg-publish":true,"permalink":"/aws/vpc/atomic-elements/internet-gateway/","tags":["internet-gateway"]}
 ---
 
 <br>
