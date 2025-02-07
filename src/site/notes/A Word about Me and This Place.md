@@ -26,10 +26,9 @@
 <br>
 <br
 <br>
-
 ## Who AM I?
 
-![resume.excalidraw.png](/img/user/resume/resume.excalidraw.png)
+![resume.excalidraw.png|1000](/img/user/resume/resume.excalidraw.png)
 
 
 
