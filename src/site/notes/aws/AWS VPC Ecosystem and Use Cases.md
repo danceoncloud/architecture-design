@@ -18,3 +18,13 @@ The AWS Virtual Private Cloud (VPC) ecosystem enables the creation of well-isola
 
 [[aws/vpc/use-cases/Communication between VPCs through Transit Gateway\|Communication between VPCs through Transit Gateway]]
 
+
+<br>
+### Components
+
+[[aws/vpc/atomic-elements/vpc\|vpc]]  [[aws/vpc/atomic-elements/subnet\|subnet]]  [[aws/vpc/atomic-elements/route-table\|route-table]]
+
+
+
+
+
