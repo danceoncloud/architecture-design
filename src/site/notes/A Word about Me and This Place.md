@@ -7,7 +7,6 @@
 
 ### To keep and share: 
 
-
 **Technical Notes** through learning and working
 
 **Diagrams** for better understandability
@@ -16,17 +15,16 @@
 
 <br>
 <br>
+## Major Topics
+
+### [[aws/AWS VPC Ecosystem and Use Cases\|AWS VPC Ecosystem and Use Cases]]
+
+<br>
 
 ## Who AM I?
 
 ![resume.excalidraw.png](/img/user/resume/resume.excalidraw.png)
 
-<br>
-<br>
-
-## Major Topics
-
-### [[aws/AWS VPC Ecosystem and Use Cases\|AWS VPC Ecosystem and Use Cases]]
 
 
 
