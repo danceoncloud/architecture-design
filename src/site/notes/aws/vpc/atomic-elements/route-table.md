@@ -3,6 +3,7 @@
 ---
 
 
+
 ## A route table contains a set of rules, called _routes_, that determine where network traffic from your subnet or gateway is directed.
 
 - Destination: the range of ip address you want to reach
