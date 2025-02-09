@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/aws/vpc/atomic-elements/nat-gateway/"}
 ---
 
-NAT gateway allows internet access from private subnet.
+NAT gateway allows internet access from private subnet, through internet gateway.
 
 They ONLY allow **outgoing** requests and responses of these requests.
 

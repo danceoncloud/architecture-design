@@ -13,4 +13,6 @@ Instance always has private IP address and it must have [[aws/vpc/atomic-element
 
 Internet Gateway applied Network Address Translate(NAT) between private and public/elastic ip address.
 
+Outgoing traffics coming from NAT Gateway does not need NAT at IGW, since it's already done by NAT Gateway.
+
 ![Internet Gateway and NAT.png](/img/user/aws/vpc/png/atomic-elements/Internet%20Gateway%20and%20NAT.png)
