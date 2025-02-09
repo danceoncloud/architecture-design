@@ -3,7 +3,15 @@
 ---
 
 
-## What Do I Do Here?
+> [!info] What Do I Do Here?
+> To keep and share: 
+>**Technical Notes** through learning and working 
+>
+>**Diagrams** for better understandability
+>
+>**Terraform code** ready to use
+
+
 
 ### To keep and share: 
 
@@ -11,7 +19,9 @@
 
 **Diagrams** for better understandability
 
-**Terraform code** ready to use
+**Terraform code** ready to use](<his is a nice way to highlight important details.T>)
+
+
 
 <br>
 <br>
