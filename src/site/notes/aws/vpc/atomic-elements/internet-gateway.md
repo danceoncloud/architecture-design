@@ -4,7 +4,6 @@
 
 <br>
 
-
 It is a VPC component that allows communication between VPC and the internet.
 
 It allows traffic to/from internet.
