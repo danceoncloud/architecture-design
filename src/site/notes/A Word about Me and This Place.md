@@ -3,8 +3,6 @@
 ---
 
 
-> [!info] Did You Know?  
-> This is a nice way to highlight important details.
 
 ## What Do I Do Here?
 
