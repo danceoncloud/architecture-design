@@ -14,7 +14,7 @@ The first 4 ip address and the last IP address in each subnet are reserved by AW
 ### Subnet types:
 1. public subnet: has direct route to internet gateway
 2. private subnet: has no direct route to [[aws/vpc/atomic-elements/internet-gateway\|internet-gateway]]; requires [[aws/vpc/atomic-elements/nat-gateway\|nat-gateway]] for public internet
-3. VPN-only subnet: has route to [[aws/vpc/atomic-elements/Site-to-Site VPN\|Site-to-Site VPN]] through [[virtual private gateway\|virtual private gateway]]
+3. VPN-only subnet: has route to [[Site-to-Site VPN\|Site-to-Site VPN]] through [[virtual private gateway\|virtual private gateway]]
 4. Isolated subnet: has no route to outside of its vpc.
 
 
