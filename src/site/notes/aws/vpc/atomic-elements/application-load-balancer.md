@@ -5,6 +5,7 @@
 ![Application Load Balancer.png|1200](/img/user/aws/vpc/png/atomic-elements/Application%20Load%20Balancer.png)
 ## What
 - routing **HTTP and HTTPS** traffic to multiple targets, such as EC2 instances, containers, and IP addresses, based on advanced routing rules.
+
 >[!info] Key Components
     >**Load Balancer**: single point of contact for clients
    > **Target Group**:  routes requests to one or more registered targets  
