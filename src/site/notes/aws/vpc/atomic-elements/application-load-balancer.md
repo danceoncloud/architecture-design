@@ -2,7 +2,7 @@
 {"dg-publish":true,"permalink":"/aws/vpc/atomic-elements/application-load-balancer/","title":"Application Load Balancer"}
 ---
 
-![Application Load Balancer.png](/img/user/aws/vpc/png/atomic-elements/Application%20Load%20Balancer.png)
+![Application Load Balancer.png|1200](/img/user/aws/vpc/png/atomic-elements/Application%20Load%20Balancer.png)
 ## What
 - routing **HTTP and HTTPS** traffic to multiple targets, such as EC2 instances, containers, and IP addresses, based on advanced routing rules.
 >[!info] Key Components
