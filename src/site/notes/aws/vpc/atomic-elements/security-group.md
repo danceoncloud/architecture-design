@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/aws/vpc/atomic-elements/security-group/"}
+{"dg-publish":true,"permalink":"/aws/vpc/atomic-elements/security-group/","title":"Security Group"}
 ---
 
 

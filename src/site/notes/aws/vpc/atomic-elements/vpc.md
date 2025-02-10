@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/aws/vpc/atomic-elements/vpc/"}
+{"dg-publish":true,"permalink":"/aws/vpc/atomic-elements/vpc/","title":"AWS VPC"}
 ---
 
 

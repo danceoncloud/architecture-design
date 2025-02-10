@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/aws/vpc/atomic-elements/vpc-peering/"}
+{"dg-publish":true,"permalink":"/aws/vpc/atomic-elements/vpc-peering/","title":"VPC Peering"}
 ---
 
 

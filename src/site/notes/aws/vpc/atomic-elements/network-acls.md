@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/aws/vpc/atomic-elements/network-acls/"}
+{"dg-publish":true,"permalink":"/aws/vpc/atomic-elements/network-acls/","title":"Network ACLs"}
 ---
 
 

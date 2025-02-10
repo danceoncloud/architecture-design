@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/aws/vpc/atomic-elements/transit-gateway/"}
+{"dg-publish":true,"permalink":"/aws/vpc/atomic-elements/transit-gateway/","title":"Transit Gateway"}
 ---
 
 

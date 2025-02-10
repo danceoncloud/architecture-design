@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/aws/vpc/atomic-elements/public-ipv4-address/"}
+{"dg-publish":true,"permalink":"/aws/vpc/atomic-elements/public-ipv4-address/","title":"Public IPv4 Address"}
 ---
 
 There are TWO types of public IPv4 addresses on AWS:

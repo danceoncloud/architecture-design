@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/aws/vpc/atomic-elements/subnet/"}
+{"dg-publish":true,"permalink":"/aws/vpc/atomic-elements/subnet/","title":"Subnet"}
 ---
 
 ## A subnet is a range of IP addresses in your VPC.

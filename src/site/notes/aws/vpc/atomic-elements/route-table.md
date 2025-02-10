@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/aws/vpc/atomic-elements/route-table/"}
+{"dg-publish":true,"permalink":"/aws/vpc/atomic-elements/route-table/","title":"Route Table"}
 ---
 
 

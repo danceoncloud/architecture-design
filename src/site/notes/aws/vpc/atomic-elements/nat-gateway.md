@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/aws/vpc/atomic-elements/nat-gateway/"}
+{"dg-publish":true,"permalink":"/aws/vpc/atomic-elements/nat-gateway/","title":"Nat Gateway"}
 ---
 
 NAT gateway allows internet access from private subnet, through internet gateway.

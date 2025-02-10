@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/aws/vpc/atomic-elements/transit-gateway-peering/"}
+{"dg-publish":true,"permalink":"/aws/vpc/atomic-elements/transit-gateway-peering/","title":"Transit Gateway Peering"}
 ---
 
 Transit Gateway Peering is used to connect transit gateway in **different regions**.
