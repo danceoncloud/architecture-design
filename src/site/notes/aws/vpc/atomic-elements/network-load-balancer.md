@@ -30,6 +30,8 @@
 
 ## Related Services/Resources
 - [[aws/vpc/atomic-elements/private-link\|private-link]]
+- direct-connect
+- site-to-site-vpn
 
 ## References
 - [AWS Network Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/network/load-balancer-monitoring.html)
