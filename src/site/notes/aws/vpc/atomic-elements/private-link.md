@@ -10,6 +10,7 @@ PrivateLink enables private connectivity across VPCs, accounts, and regions **wi
 In Reality, we refer to following services backed by private link.
 
 
+
 > [!info] Key Components:
 >- **Endpoints (Consumer side)**: 
 >>- Interface endpoint 
