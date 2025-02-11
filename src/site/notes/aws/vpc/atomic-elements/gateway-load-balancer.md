@@ -8,6 +8,7 @@
 - A managed service for deploying, scaling, and monitoring **third-party virtual appliances** (e.g., firewalls, intrusion detection systems).
 - Acts as a gateway to transparently route traffic through appliances for inspection or processing.
 
+
 >[!info] Key Components
 >**Load Balancer**: It listens for all IP packages across all ports and forwards to target group using **GENEVE protocol on port 6081**
 >**Target Group**:  Instance or IP address  
