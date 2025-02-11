@@ -30,3 +30,21 @@
 - [AWS Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html)
 
 
+
+
+```mermaid
+
+flowchart LR
+
+    Users["Users"] -- HTTPS --> Internet-facing-ALB["Internet-facing-ALB"] & Internet-facing-ALB
+
+    Internet-facing-ALB -- HTTP --> EC2("Web Server") & ECS("Fargate Containers")
+
+    Internet-facing-ALB -- /api/* --> ServiceA("EC2/ECS")
+
+    Internet-facing-ALB -- /admin/* --> ServiceB("Lambda")
+
+    Internet-facing-ALB -- Private --> Internal-ALB["Internal-ALB"]
+
+    Internal-ALB --> MicroserviceA["MicroserviceA"] & MicroserviceB["MicroserviceB"]
+```
