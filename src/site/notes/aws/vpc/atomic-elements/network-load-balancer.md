@@ -6,7 +6,7 @@
 
 ## What
 - A **Layer 4 (Transport Layer)** load balancer that distributes **TCP, UDP, and TLS** traffic across multiple targets (EC2, IPs, Lambda).
-- Designed for **high throughput** and **millisecond latency**.
+- Designed for **high throughput** and **millisecond latency**. 
 - Supports **zonal failover** and **Private Link** for secure service exposure.
 
 > [!info] Key Components:
