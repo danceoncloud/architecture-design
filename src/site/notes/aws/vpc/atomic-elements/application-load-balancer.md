@@ -35,16 +35,18 @@
 ```mermaid
 
 flowchart LR
+ %% ===== Security & Public Traffic =====
+	Users["Users (Public Internet)"] -- HTTPS --> WAF["AWS WAF (DDoS/OWASP Protection)"]
+	WAF --> Internet-facing-ALB["Internet-facing ALB\n(SSL Termination, Redirect HTTP→HTTPS)"]
 
-    Users["Users"] -- HTTPS --> Internet-facing-ALB["Internet-facing-ALB"] & Internet-facing-ALB
+  %% ===== Host-Based Routing =====
+	Internet-facing-ALB -->|"Host: api.example.com"| APIRoute
+	Internet-facing-ALB -->|"Host: app.example.com"| AppRoute
 
-    Internet-facing-ALB -- HTTP --> EC2("Web Server") & ECS("Fargate Containers")
-
-    Internet-facing-ALB -- /api/* --> ServiceA("EC2/ECS")
-
-    Internet-facing-ALB -- /admin/* --> ServiceB("Lambda")
-
-    Internet-facing-ALB -- Private --> Internal-ALB["Internal-ALB"]
-
-    Internal-ALB --> MicroserviceA["MicroserviceA"] & MicroserviceB["MicroserviceB"]
+ %% ===== API Route (api.example.com) =====
+  subgraph API Routing
+    APIRoute -->|"/v1/*"| Cognito["Cognito (Auth)"]
+    Cognito -->|Authenticated| EC2-API["EC2 (API Servers)\n- Auto Scaling\n- Health Checks"]
+    APIRoute -->|"Path: /health"| Lambda-Health["Lambda (Health Check)\n- Fixed Response: 200 OK"]
+  end
 ```
