@@ -18,6 +18,9 @@ The AWS Virtual Private Cloud (VPC) ecosystem enables the creation of well-isola
 
 [[aws/vpc/architectures/Communication between VPCs through Transit Gateway\|Communication between VPCs through Transit Gateway]]
 
+[[aws/vpc/architectures/Multiplayer Game Server with High Performance and Low Latency\|Multiplayer Game Server with High Performance and Low Latency]]
+
+[[aws/vpc/architectures/Hybrid Database Access(no public internet usage)\|Hybrid Database Access(no public internet usage)]]
 
 <br>
 
