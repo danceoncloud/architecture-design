@@ -29,24 +29,3 @@
 
 - [AWS Application Load Balancer](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/introduction.html)
 
-
-
-
-```mermaid
-
-flowchart LR
- %% ===== Security & Public Traffic =====
-	Users["Users (Public Internet)"] -- HTTPS --> WAF["AWS WAF (DDoS/OWASP Protection)"]
-	WAF --> Internet-facing-ALB["Internet-facing ALB\n(SSL Termination, Redirect HTTP→HTTPS)"]
-
-  %% ===== Host-Based Routing =====
-	Internet-facing-ALB -->|"Host: api.example.com"| APIRoute
-	Internet-facing-ALB -->|"Host: app.example.com"| AppRoute
-
- %% ===== API Route (api.example.com) =====
-  subgraph API Routing
-    APIRoute -->|"/v1/*"| Cognito["Cognito (Auth)"]
-    Cognito -->|Authenticated| EC2-API["EC2 (API Servers)\n- Auto Scaling\n- Health Checks"]
-    APIRoute -->|"Path: /health"| Lambda-Health["Lambda (Health Check)\n- Fixed Response: 200 OK"]
-  end
-```
