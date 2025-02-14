@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/aws/organizations/","title":"Organizations"}
+{"dg-publish":true,"permalink":"/aws/organizations/"}
 ---
 
 
@@ -11,34 +11,29 @@ AWS Organizations is a service that provides centralized management of multiple 
 >**Consolidated Billing**: only for managing accounts' billings centrally. can change to All Feature. 
 
 
-| **Core Components**     |                                                                                     |     |
-| ----------------------- | ----------------------------------------------------------------------------------- | --- |
-| root                    | the top-level container of organization, management account is always at this level |     |
-| management accounts     | the ONLY aws account to create/manage Organization                                  |     |
-| member accounts         | aws accounts created or invited through Organization console                        |     |
-| organizational units    | sub level to group accounts                                                         |     |
-| delegated administrator | recommended accounts for daily tasks normally done through management account       |     |
+# Core Components
+- **Root**: The top-level container of an organization; the management account is always at this level.
+- **Management Account**: The **only** AWS account that can create and manage the organization.
+- **Member Accounts**: AWS accounts that are either **created or invited** through the AWS Organizations console.
+- **Organizational Units (OUs)**: Sub-level groups used to organize and manage accounts.
+- **Delegated Administrator**: Recommended accounts for performing **daily administrative tasks** instead of using the management account.
 
-| **Policy Types**     |                                                         |                                                      |
-| -------------------- | ------------------------------------------------------- | ---------------------------------------------------- |
-| Authorization Policy | to set policy boundary **without assigning permission** |                                                      |
-|                      | Source Control Policy                                   | to specify principal-centric policies                |
-|                      | Resource Control Policy                                 | to specify resource-centric policies                 |
-| Management Policy    | to configure and manage AWS services                    |                                                      |
-|                      | Declarative Policy                                      | to apply desired policy to services                  |
-|                      | Backup Policy                                           | to apply backup plans to accounts/OU                 |
-|                      | Tag Policy                                              | to standardize tags across accounts                  |
-|                      | Chatbot Policy                                          | to control access from chat applications to accounts |
-|                      | AI Service Opt-out Policy                               | to control data collection for AWS AI services       |
+# Policy Types
+- **Authorization Policy**: Defines policy boundaries **without assigning permissions**.
+    - **Source Control Policy**: Specifies **principal-centric** policies.
+    - **Resource Control Policy**: Specifies **resource-centric** policies.
+- **Management Policy**: Configures and manages AWS services.
+    - **Declarative Policy**: Applies desired configurations to services.
+    - **Backup Policy**: Defines backup plans for accounts and OUs.
+    - **Tag Policy**: Standardizes tagging across accounts.
+    - **Chatbot Policy**: Controls access from chat applications to AWS accounts.
+    - **AI Service Opt-out Policy**: Manages data collection settings for AWS AI services.
 
-| **Service Integration**         |                                                                                   |
-| ------------------------------- | --------------------------------------------------------------------------------- |
-| Trusted Access for AWS Services | allows specific AWS services to perform tasks across your organization's accounts |
-| IAM Identity Center Integration | provides centralized access management for all accounts in your organization      |
-| Cross-Account Role Management   | role management in trusted account and organization-wide access control           |
-| Service Trust Policy            | allows AWS services to perform tasks on organization wide                         |
-
-
+# Service Integration
+- **Trusted Access for AWS Services**: Allows specific AWS services to perform tasks across your organization's accounts.
+- **IAM Identity Center Integration**: Provides centralized access management for all accounts in your organization.
+- **Cross-Account Role Management**: Manages roles in trusted accounts and enforces organization-wide access control.
+- **Service Trust Policy**: Grants AWS services permission to perform tasks across the organization.
 
 ## When
 - When managing more than a handful of AWS accounts
