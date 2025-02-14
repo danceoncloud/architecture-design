@@ -39,12 +39,6 @@ AWS Organizations is a service that provides centralized management of multiple 
 | Service Trust Policy            | allows AWS services to perform tasks on organization wide                         |
 
 
-| Security                        |     |
-| ------------------------------- | --- |
-| Service Trust Policy            |     |
-| Cross-Account Access Management |     |
-| Organizations CloudTrail        |     |
-
 
 ## When
 - When managing more than a handful of AWS accounts
