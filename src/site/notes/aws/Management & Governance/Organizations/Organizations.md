@@ -10,7 +10,7 @@ AWS Organizations is a service that provides centralized management of multiple 
 >**All Features**: default mode, with all permissions. cannot change to Consolidated Billing. \
 >**Consolidated Billing**: only for managing accounts' billings centrally. can change to All Feature. 
 
-![Organizations.png](/img/user/aws/Management%20&%20Governance/Organizations/excalidraw/Organizations.png)
+![Organizations_Components.png](/img/user/aws/Management%20&%20Governance/Organizations/excalidraw/Organizations_Components.png)
 ## Core Components
 - **Root**: The top-level container of an organization; the management account is always at this level.
 - **Management Account**: The **only** AWS account that can create and manage the organization.
@@ -18,6 +18,8 @@ AWS Organizations is a service that provides centralized management of multiple 
 - **Organizational Units (OUs)**: Sub-level groups used to organize and manage accounts.
 - **Delegated Administrator**: Recommended accounts for performing **daily administrative tasks** instead of using the management account.
 
+
+![Organizations_SCPs.png](/img/user/aws/Management%20&%20Governance/Organizations/excalidraw/Organizations_SCPs.png)
 ## Policy Types
 - **Authorization Policy**: Defines policy boundaries **without assigning permissions**.
     - **Source Control Policy**: Specifies **principal-centric** policies.
@@ -29,6 +31,9 @@ AWS Organizations is a service that provides centralized management of multiple 
     - **Chatbot Policy**: Controls access from chat applications to AWS accounts.
     - **AI Service Opt-out Policy**: Manages data collection settings for AWS AI services.
 
+>[!SCP] Permission Evaluation
+>ALLOW: should be explicitly allowed at **ALL** level from top down to account
+>DENY: any deny from higher layer will take final effect 
 ## Service Integration
 - **Trusted Access for AWS Services**: Allows specific AWS services to perform tasks across your organization's accounts.
 - **IAM Identity Center Integration**: Provides centralized access management for all accounts in your organization.
