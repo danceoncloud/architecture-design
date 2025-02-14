@@ -6,7 +6,7 @@
 ## What
 AWS Organizations is a service that provides centralized management of multiple AWS accounts, enabling consolidated billing, hierarchical resource organization, and policy-based controls across accounts.
 
->[!Two Feature Modes]
+>[!info] Two Feature Modes
 >**All Features**: default mode, with all permissions. cannot change to Consolidated Billing. \
 >**Consolidated Billing**: only for managing accounts' billings centrally. can change to All Feature. 
 
@@ -18,8 +18,6 @@ AWS Organizations is a service that provides centralized management of multiple 
 - **Organizational Units (OUs)**: Sub-level groups used to organize and manage accounts.
 - **Delegated Administrator**: Recommended accounts for performing **daily administrative tasks** instead of using the management account.
 
-
-![Organizations_SCPs.png](/img/user/aws/Management%20&%20Governance/Organizations/excalidraw/Organizations_SCPs.png)
 ## Policy Types
 - **Authorization Policy**: Defines policy boundaries **without assigning permissions**.
     - **Source Control Policy**: Specifies **principal-centric** policies.
@@ -31,9 +29,16 @@ AWS Organizations is a service that provides centralized management of multiple 
     - **Chatbot Policy**: Controls access from chat applications to AWS accounts.
     - **AI Service Opt-out Policy**: Manages data collection settings for AWS AI services.
 
->[!SCP] Permission Evaluation
->ALLOW: should be explicitly allowed at **ALL** level from top down to account
->DENY: any deny from higher layer will take final effect 
+>[!info] SCP Permission Evaluation
+>**ALLOW**: should be explicitly allowed at **ALL** level from top down to account \
+>**DENY**: any deny from higher layer will take final effect 
+
+>[!info] RCP Permission Evalution
+>`RCPFullAWSAccess` is aws management policy and attached to Root and each OU/account by default and you **cannot** detach it.
+>To deny access to a resource, it's enough to configure DENY at desired OU or account and this denial will be inherited.
+
+
+![Organizations_SCPs.png](/img/user/aws/Management%20&%20Governance/Organizations/excalidraw/Organizations_SCPs.png)
 ## Service Integration
 - **Trusted Access for AWS Services**: Allows specific AWS services to perform tasks across your organization's accounts.
 - **IAM Identity Center Integration**: Provides centralized access management for all accounts in your organization.
