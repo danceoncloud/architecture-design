@@ -43,7 +43,6 @@ AWS Organizations is a service that provides centralized management of multiple 
 - **Trusted Access for AWS Services**: Allows specific AWS services to perform tasks across your organization's accounts.
 - **IAM Identity Center Integration**: Provides centralized access management for all accounts in your organization.
 - **Cross-Account Role Management**: Manages roles in trusted accounts and enforces organization-wide access control.
-- **Service Trust Policy**: Grants AWS services permission to perform tasks across the organization.
 
 ## When
 - When managing more than a handful of AWS accounts
