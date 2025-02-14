@@ -11,14 +11,14 @@ AWS Organizations is a service that provides centralized management of multiple 
 >**Consolidated Billing**: only for managing accounts' billings centrally. can change to All Feature. 
 
 
-# Core Components
+## Core Components
 - **Root**: The top-level container of an organization; the management account is always at this level.
 - **Management Account**: The **only** AWS account that can create and manage the organization.
 - **Member Accounts**: AWS accounts that are either **created or invited** through the AWS Organizations console.
 - **Organizational Units (OUs)**: Sub-level groups used to organize and manage accounts.
 - **Delegated Administrator**: Recommended accounts for performing **daily administrative tasks** instead of using the management account.
 
-# Policy Types
+## Policy Types
 - **Authorization Policy**: Defines policy boundaries **without assigning permissions**.
     - **Source Control Policy**: Specifies **principal-centric** policies.
     - **Resource Control Policy**: Specifies **resource-centric** policies.
@@ -29,7 +29,7 @@ AWS Organizations is a service that provides centralized management of multiple 
     - **Chatbot Policy**: Controls access from chat applications to AWS accounts.
     - **AI Service Opt-out Policy**: Manages data collection settings for AWS AI services.
 
-# Service Integration
+## Service Integration
 - **Trusted Access for AWS Services**: Allows specific AWS services to perform tasks across your organization's accounts.
 - **IAM Identity Center Integration**: Provides centralized access management for all accounts in your organization.
 - **Cross-Account Role Management**: Manages roles in trusted accounts and enforces organization-wide access control.
