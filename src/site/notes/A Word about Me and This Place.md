@@ -20,7 +20,7 @@
 
 ## Major Topics
 
-### [[aws/AWS VPC Ecosystem and Use Cases\|AWS VPC Ecosystem and Use Cases]]
+### [[aws/Networking-Content-Delivery/VPC/AWS VPC Ecosystem and Use Cases\|AWS VPC Ecosystem and Use Cases]]
 
 <br>
 

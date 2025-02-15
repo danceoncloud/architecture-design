@@ -63,9 +63,6 @@ This is a global service and can manage accounts globally
 - Share resources across accounts
 - Simplify compliance implementation
 
-## Related Services/Resources
-
-  
 ## References
 
 [AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html)
