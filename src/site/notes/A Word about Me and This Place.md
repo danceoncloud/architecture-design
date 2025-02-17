@@ -21,6 +21,7 @@
 ## Major Topics
 
 ### [[aws/Networking-Content-Delivery/VPC/AWS VPC Ecosystem and Use Cases\|AWS VPC Ecosystem and Use Cases]]
+### [[aws/Networking-Content-Delivery/Route 53/AWS Route 53 Ecosystem and Use Cases\|AWS Route 53 Ecosystem and Use Cases]]
 
 <br>
 
