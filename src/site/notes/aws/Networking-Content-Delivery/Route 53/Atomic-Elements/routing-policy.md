@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/aws/networking-content-delivery/route-53/atomic-elements/routing-policy/"}
+{"dg-publish":true,"permalink":"/aws/networking-content-delivery/route-53/atomic-elements/routing-policy/","title":"Route Policy"}
 ---
 
 These routing policies apply to **all Route 53 usage**, specifically for **DNS records** in **public hosted zones**.
