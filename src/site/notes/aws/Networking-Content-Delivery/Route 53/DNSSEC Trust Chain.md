@@ -6,6 +6,7 @@
 ## What
 The DNSSEC (DNS Security Extensions) trust chain is a hierarchical cryptographic system that **validates the authenticity and integrity of DNS responses** by linking digital signatures from the root DNS zone down to your domain. It ensures DNS data (e.g., IP addresses) cannot be tampered with or forged.
 
+
 >[!info] Key Type/Records
 >| Key Type / Record                     | Description                                                                                      |
 | ------------------------------------- | ------------------------------------------------------------------------------------------------ |
