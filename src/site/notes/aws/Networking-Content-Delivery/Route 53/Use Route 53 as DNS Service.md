@@ -8,7 +8,7 @@ when using Route 53 as DNS service, route 53 will route internet traffics to you
 >[!info] Important
 >**[[aws/Networking-Content-Delivery/Route 53/Atomic-Elements/hosted-zone\|hosted-zone]]**: a container for records to map IP addresses to your domain and sub-domains. hosted zone has the same name as the domain.
 >**[[aws/Networking-Content-Delivery/Route 53/Atomic-Elements/routing-policy\|routing-policy]]**: determine how Route 53 responses to queries \
->**[[aws/Networking-Content-Delivery/Route 53/Atomic-Elements/dnssec-trust-chain\|dnssec-trust-chain]]**: validate Route 53 responses \
+>**[[aws/Networking-Content-Delivery/Route 53/DNSSEC Trust Chain\|aws/Networking-Content-Delivery/Route 53/DNSSEC Trust Chain]]**: validate Route 53 responses \
 >**public hosted zone**: internet-facing \
 >**private hosted zone**: used inside VPC \
 >**Alias Record**: Route 53-specific record type for AWS resources \

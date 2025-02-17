@@ -30,7 +30,8 @@ Amazon Route 53 is a highly available and scalable Domain Name System (DNS) web
 	- _Latency-based_: Directs traffic to the lowest-latency region.
     - _Geolocation_: Routes users based on location.
     - _Weighted_: Distributes traffic across multiple endpoints.
-  
+
+
 ## References
 - [AWS Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html)
 

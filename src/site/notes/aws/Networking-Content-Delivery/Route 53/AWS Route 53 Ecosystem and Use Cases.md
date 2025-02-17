@@ -13,3 +13,4 @@
 
 [[aws/Networking-Content-Delivery/Route 53/Use Route 53 as DNS Resolver\|Use Route 53 as DNS Resolver]]
 
+[[aws/Networking-Content-Delivery/Route 53/DNSSEC Trust Chain\|DNSSEC Trust Chain]]
