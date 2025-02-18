@@ -28,6 +28,14 @@
 ![Content Cache.png](/img/user/aws/Networking-Content-Delivery/CloudFront/Content%20Cache.png)
 
 
+### How does TTL work with Origin Response Header to control cache duration
+
+| Origin Header | Min TTL | Default TTL | Max TTL | Result       | Explanation                               |
+| ------------- | ------- | ----------- | ------- | ------------ | ----------------------------------------- |
+| No header     | 60      | 1800        | 3600    | 1800 seconds | Default TTL used when no origin headers   |
+| max-age=300   | 60      | 1800        | 3600    | 300 seconds  | Origin's value used (between Min and Max) |
+| max-age=30    | 60      | 1800        | 3600    | 60 seconds   | Min TTL overrides shorter origin value    |
+| max-age=7200  | 60      | 1800        | 3600    | 3600 seconds | Max TTL caps longer origin value          |
 
 > [!example] Origin Server Availability
 > **Origin failover**: Configure origin groups with a primary and secondary origin; if the primary fails, CloudFront automatically routes requests to the secondary \
