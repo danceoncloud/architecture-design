@@ -2,7 +2,6 @@
 {"dg-publish":true,"permalink":"/aws/networking-content-delivery/cloud-front/content-and-server-availability/"}
 ---
 
-
 > [!info] Content Availability Facilities:
 >**Edge Locations (Points-of-Presence)**: These cache content close to users globally, reducing latency and improving availability even if the origin server experiences issues \
 >**Regional Edge Caches**: The secondary cache layer with larger storage capacity that sits between edge locations and origins \
