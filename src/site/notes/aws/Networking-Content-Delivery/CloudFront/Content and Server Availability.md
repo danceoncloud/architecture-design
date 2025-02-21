@@ -28,6 +28,7 @@
 ![Content Cache.png](/img/user/aws/Networking-Content-Delivery/CloudFront/Content%20Cache.png)
 
 <br>
+
 ### How does TTL work with Origin Response Header to control cache duration
 | Origin Header | Min TTL | Default TTL | Max TTL | Result       | Explanation                               |
 | ------------- | ------- | ----------- | ------- | ------------ | ----------------------------------------- |
