@@ -2,7 +2,6 @@
 {"dg-publish":true,"permalink":"/aws/networking-content-delivery/cloud-front/aws-cloud-front-overview/"}
 ---
 
-
 ## What
 CloudFront is a **Content Delivery Network (CDN)** designed to **accelerate content delivery** to end-users globally.
 
@@ -31,6 +30,7 @@ CloudFront is a **Content Delivery Network (CDN)** designed to **accelerate cont
 ## Related Services/Resources
 - [[aws/Networking-Content-Delivery/CloudFront/Content Delivery\|Content Delivery]]
 - [[aws/Networking-Content-Delivery/CloudFront/Content and Server Availability\|Content and Server Availability]]
+- [[aws/Networking-Content-Delivery/CloudFront/Content and Service Security\|Content and Service Security]]
 
 ## References
 [AWS CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html)

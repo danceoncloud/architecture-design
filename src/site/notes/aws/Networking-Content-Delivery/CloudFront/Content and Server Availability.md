@@ -39,7 +39,7 @@
 
 > [!example] Origin Server Availability
 > **Origin failover**: Configure origin groups with a primary and secondary origin; if the primary fails, CloudFront automatically routes requests to the secondary \
-> **Multiple origins**: Up to 25 origins per distribution allows for redundancy and load balancing \
+> **Origin Group**: Up to 25 origins per distribution allows for redundancy and load balancing \
 > **Health checks**: CloudFront can be configured to check origin health and route accordingly \
 > **AWS Shield/WAF integration**: Protects origins from DDoS attacks and malicious traffic \
 > **Elastic Load Balancing**: When using ELB as an origin, it distributes traffic across multiple instances
