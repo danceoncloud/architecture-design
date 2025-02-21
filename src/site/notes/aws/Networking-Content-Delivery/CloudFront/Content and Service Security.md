@@ -7,13 +7,21 @@
 This focus on protecting content as it moves between viewers and CloudFront.
 
 ### **Access Control**
-- **Signed URLs and Cookies through Trusted Key Group:** Control access to specific content for authenticated users.
+
+> [!NOTE] **Signed URLs and Cookies through Trusted Key Group**
+> Control access to specific content for authenticated users.
+> ![Signed URL or Cookies.png](/img/user/aws/Networking-Content-Delivery/CloudFront/Signed%20URL%20or%20Cookies.png)
+
 - **Geo-Restriction:** Block access based on the user's location.
 - **AWS WAF:** Filter malicious traffic, block bots, and set rate limits. Applied at Edge Location for evaluation.
 
 ### **Encryption and Data Integrity:**
 - **HTTPS (TLS):** Enforce HTTPS for viewers to protect data in transit.
-- **Field-Level Encryption:** Encrypt sensitive fields like PII at the edge before reaching your origin.
+
+> [!NOTE] **Field-Level Encryption**
+> Encrypt sensitive fields like PII at the edge before reaching your origin.
+> ![Field Level Encryption.png](/img/user/aws/Networking-Content-Delivery/CloudFront/Field%20Level%20Encryption.png)
+
 - **Cache-Control Headers:** Prevent caching of private or sensitive data.
 
 ### **Content Monitoring:**
@@ -42,7 +50,7 @@ This protects contents between CloudFront and backend origin(S3, API Gateway, VP
 
 
 > [!NOTE] HTTPS session and Symmetric Session Key
-> when using HTTPS, it's crucial to understand the creation of Symmetric Session Key on both side, this is the key element to transform **HTTP** to **HTTPS**.
+> when using HTTPS, it's crucial to understand the creation of **Symmetric Session Key** on both side, this is the key element to transform **HTTP** to **HTTPS**.
 > 
 > ![Symmetric Session Key.png](/img/user/aws/Networking-Content-Delivery/CloudFront/Symmetric%20Session%20Key.png)
 
