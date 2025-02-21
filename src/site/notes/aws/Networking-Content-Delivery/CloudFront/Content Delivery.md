@@ -21,10 +21,7 @@ Core Elements/Services:
 4. Configure trusted authorization with signed URL/cookies
 5. Enable Amazon WAF
 
->[!warning] Signed URL/Cookies
->1. Content owner create a pair of public/private key, upload public key to cloudfront to configure trust key group
->2. User must authenticate to obtain signed URL or cookies encrypted by private key.
->3. Content owner offers application that can respond to authenticated user with signed URL or cookies
+
 
 ![Distribution Configuration.png](/img/user/aws/Networking-Content-Delivery/CloudFront/Distribution%20Configuration.png)
 

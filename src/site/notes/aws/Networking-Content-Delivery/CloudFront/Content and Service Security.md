@@ -7,9 +7,11 @@
 This focus on protecting content as it moves between viewers and CloudFront.
 
 ### **Access Control**
-
 > [!NOTE] **Signed URLs and Cookies through Trusted Key Group**
 > Control access to specific content for authenticated users.
+>1. Content owner create a pair of public/private key, upload public key to cloudfront to configure trust key group
+>2. User must authenticate to obtain signed URL or cookies encrypted by private key.
+>3. Content owner offers application that can respond to authenticated user with signed URL or cookies
 > ![Signed URL or Cookies.png](/img/user/aws/Networking-Content-Delivery/CloudFront/Signed%20URL%20or%20Cookies.png)
 
 - **Geo-Restriction:** Block access based on the user's location.
