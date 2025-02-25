@@ -9,7 +9,6 @@ The AWS Virtual Private Cloud (VPC) ecosystem enables the creation of well-isola
 <br>
 
 
-
 [[aws/Networking-Content-Delivery/VPC/Architectures/A Simple Private Subnet with EC2 and RDS\|A Simple Private Subnet with EC2 and RDS]]
 
 [[aws/Networking-Content-Delivery/VPC/Architectures/A Simple Public Subnet with Internet Access\|A Simple Public Subnet with Internet Access]]
@@ -23,6 +22,7 @@ The AWS Virtual Private Cloud (VPC) ecosystem enables the creation of well-isola
 [[aws/Networking-Content-Delivery/VPC/Architectures/Multiplayer Game Server with High Performance and Low Latency\|Multiplayer Game Server with High Performance and Low Latency]]
 
 [[aws/Networking-Content-Delivery/VPC/Architectures/Hybrid Database Access(no public internet usage)\|Hybrid Database Access(no public internet usage)]]
+
 
 <br>
 
