@@ -3,7 +3,6 @@
 ---
 
 
-
 ## What Do I Do Here?
 
 ### To keep and share: 
@@ -15,7 +14,7 @@
 **Terraform code** ready to use
 
 
-
+<br>
 
 ## Major Topics
 
@@ -24,7 +23,7 @@
 ### [[aws/Networking-Content-Delivery/CloudFront/AWS Cloud Front Overview\|AWS Cloud Front Overview]]
 
 
-
+<br>
 ## Who AM I?
 
 ![resume.excalidraw.png](/img/user/resume/resume.excalidraw.png)
