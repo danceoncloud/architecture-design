@@ -23,7 +23,7 @@ The AWS Virtual Private Cloud (VPC) ecosystem enables the creation of well-isola
 
 [[aws/Networking-Content-Delivery/VPC/Architectures/Hybrid Database Access(no public internet usage)\|Hybrid Database Access(no public internet usage)]]
 
-[[aws/Networking-Content-Delivery/VPC/excalidraw/Hybrid Network Architecture between AWS and On-Premises\|Hybrid Network Architecture between AWS and On-Premises]]
+[[aws/Networking-Content-Delivery/VPC/Architectures/Hybrid Network Architecture between AWS and On-Premises\|Hybrid Network Architecture between AWS and On-Premises]]
 <br>
 
 
