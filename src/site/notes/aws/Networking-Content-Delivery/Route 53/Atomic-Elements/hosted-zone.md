@@ -2,6 +2,7 @@
 {"dg-publish":true,"permalink":"/aws/networking-content-delivery/route-53/atomic-elements/hosted-zone/","title":"Hosted Zone"}
 ---
 
+
 ## What
 A **hosted zone** in AWS Route 53 is a **container for DNS records** that define how a domain name resolves to IP addresses or AWS resources.
 

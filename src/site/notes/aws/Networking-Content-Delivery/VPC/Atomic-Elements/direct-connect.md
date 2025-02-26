@@ -29,7 +29,7 @@ AWS Direct Connect links your internal network to an AWS over a standard Etherne
 >[!example] Key Components: On-Premises Side
 >**On-Premises Router/Firewall**: handle traffic between AWS and On-Premises. must support **BGP** for dynamic routing with AWS.
 
-![Direct Connection Summary.png](/img/user/aws/Networking-Content-Delivery/VPC/png/Atomic-Elements/Direct%20Connection%20Summary.png)
+![Direct Connect Summary.png](/img/user/aws/Networking-Content-Delivery/VPC/png/Atomic-Elements/Direct%20Connect%20Summary.png)
 
 
 
