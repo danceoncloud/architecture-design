@@ -7,20 +7,21 @@
 **Component**:
 [[aws/Networking-Content-Delivery/VPC/Atomic-Elements/direct-connect\|direct-connect]]  [[aws/Networking-Content-Delivery/VPC/Atomic-Elements/site-to-site-vpn\|site-to-site-vpn]]
 
-### Direct Connect as Primary + VPN as Backup (Active/Passive)
+## Major Use Cases
+#### Direct Connect as Primary + VPN as Backup (Active/Passive)
 **benefits**: high availability, cost-effective
 **key points**: use **BGP** to advertise routes, assign higher **BGP** priority to Direct Connect routes. 
-
-### Direct Connect + VPN for Encryption
+<br>
+#### Direct Connect + VPN for Encryption
 **benefits**: combine the speed of Direct Connect with VPN's encryption, meet strict compliance requirements.
 **key points**: encrypt data in transit over Direct Connect with IP Sec VPN.
-
-### Direct Connect + VPN via Transit Gateway (Scalable Multi-VPC)
+<br>
+#### Direct Connect + VPN via Transit Gateway (Scalable Multi-VPC)
 **benefits**: simply multi-account/multi-VPC architectures, reduce operational overhead.
 **key points**: transit gateway route table propagate routes between VPCs, Direct Connect and VPN. TGW Network Manager for centralized monitoring.
-
-### Multi-Region Direct Connect + VPN (Global Resilience)
+<br>
+#### Multi-Region Direct Connect + VPN (Global Resilience)
 **benefits**: disaster recovery, geographic redundancy for mission-critical workloads.
 **key points**: deploy Direct Connect and VPN to multiples regions, configure **BGP** community tags to prioritize regional routes.
-
+<br>
 ![Hybrid Network Architecture between AWS and On-Premises.png](/img/user/aws/Networking-Content-Delivery/VPC/png/Hybrid%20Network%20Architecture%20between%20AWS%20and%20On-Premises.png)
