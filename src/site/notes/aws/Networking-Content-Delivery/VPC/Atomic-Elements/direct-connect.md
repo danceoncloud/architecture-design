@@ -10,7 +10,7 @@ AWS Direct Connect links your internal network to an AWS over a standard Etherne
 >**Virtual Interface(VIF)**:
 >>Public VIF: connect to AWS public services (S3, DynamoDB, etc).\
 >>Private VIF: connect to your VPC using private IP address.\
->>Transit VIF: connect to AWS Transit Gateway.
+>>Transit VIF: connect to AWS Transit Gateway associated with **Direct Connect Gateway**.
 >
 >**Direct Connect Gateway**: connect to multiple VPCs of different regions through a single Direct Connect connection.
 
@@ -30,7 +30,6 @@ AWS Direct Connect links your internal network to an AWS over a standard Etherne
 >**On-Premises Router/Firewall**: handle traffic between AWS and On-Premises. must support **BGP** for dynamic routing with AWS.
 
 ![Direct Connect Summary.png](/img/user/aws/Networking-Content-Delivery/VPC/png/Atomic-Elements/Direct%20Connect%20Summary.png)
-
 
 
 ## Related Services/Resources
