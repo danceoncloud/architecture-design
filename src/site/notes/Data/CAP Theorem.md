@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/data/cap-theorem/","title":"CAP Theorem"}
+{"dg-publish":true,"permalink":"/data/cap-theorem/","title":"CAP Theorem","hide":true}
 ---
 
 ### What
