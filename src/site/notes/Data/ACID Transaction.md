@@ -64,3 +64,4 @@ Teradata, Oracle Exadata
 - Sometimes simpler management
 - Often better for specific workload patterns
 
+### Linked Service

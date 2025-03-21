@@ -62,4 +62,4 @@ example.com.  TXT
 [[aws/Networking-Content-Delivery/Route 53/Route 53 Overview\|Route 53 Overview]]
   
 ## References
-- [Source of information or documentation link]
+- [AWS Route53 Hosted Zone](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/hosted-zones-working-with.html)
