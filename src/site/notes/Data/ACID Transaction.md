@@ -25,19 +25,19 @@ RDBMS like PostgreSQL, MySQL and SQL Server are designed for OLAP(Online Transac
 - **Mechanisms**: WAL, row-level locking, strict serializability.
 - **Trade-off**: Sacrifices scalability for strict consistency (optimized for OLTP).
 
-**Data Warehouse**: Partial or Modified ACID
+### **Data Warehouse**: Partial or Modified ACID
 Systems like Snowflake, AWS Redshift, Google BigQuery, Azure Synapse Analytics prioritize analytics(OLAP) over transactional workloads. Techniques like **snapshot isolation** or **multi-version concurrency control** to ensure atomicity and consistency for bulk operations.
 - **Priority**: Atomicity and durability for bulk operations, with relaxed isolation (e.g., snapshot isolation).
 - **Mechanisms**: MVCC, time-travel, immutable snapshots.
 - **Trade-off**: Prioritizes read performance and concurrency for analytics over strict transactional isolation.
 
-**Data Lakehouse**: ACID via metadata layers
+### **Data Lakehouse**: ACID via metadata layers
 Platforms like Databricks Delta Lake and Apache Iceberg add ACID guarantees to object storage using transaction logs and atomic commits.
 - **Priority**: Atomicity and durability for large-scale data writes (often append-heavy workloads).
 - **Mechanisms**: Transaction logs (e.g., Delta Lake’s `_delta_log`), optimistic concurrency control, and schema enforcement.
 - **Trade-off**: Avoids locks for distributed systems but may have eventual consistency in some scenarios.
 
-**NoSQL databases**: ACID supports in progress
+### **NoSQL databases**: ACID supports in progress
 MongoDB (4.0+): multi-document ACID transactions.
 DynamoDB: ACID compliance for multiple items since 2018.
 Neo4J: full ACID support.
@@ -48,14 +48,14 @@ Neo4J: full ACID support.
 
 
 ## Storage and Compute
-**Storage-Compute Separation**:
+### **Storage-Compute Separation**:
 Snowflake, AWS Redshift Spectrum, Google BigQuery, Azure Synapse Analytics, Databricks Lakehouse
 - Independent scaling of storage and compute resources
 - Pay-for-use compute model
 - Multiple compute clusters can access the same data concurrently
 - Storage costs typically lower
 
-**Integrated Storage-Compute**:
+### **Integrated Storage-Compute**:
 Teradata, AWS Redshift(without Spectrum), Oracle Exadata
 - Potentially lower latency for some workloads
 - Predictable performance characteristics
