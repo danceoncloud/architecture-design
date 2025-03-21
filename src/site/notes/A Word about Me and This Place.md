@@ -14,7 +14,7 @@
 **Terraform code** ready to use
 
 
-<br>
+
 
 ## Major Topics
 
@@ -23,7 +23,7 @@
 ### [[aws/Networking-Content-Delivery/CloudFront/AWS Cloud Front Overview\|AWS Cloud Front Overview]]
 
 
-<br>
+
 
 
 ## Who AM I?
