@@ -2,7 +2,6 @@
 {"dg-publish":true,"permalink":"/data/acid-transaction/"}
 ---
 
-# **ACID Transaction**
 ## What
 in the contexte of databases and data storage system, a **transaction** is any operation that is treated as a single unit of work, which either completes fully or does not complete at all, and leaves the storage system in a consistent state.
 
