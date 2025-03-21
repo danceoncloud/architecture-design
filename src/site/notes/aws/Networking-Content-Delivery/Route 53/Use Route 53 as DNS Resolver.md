@@ -20,7 +20,6 @@
 >>Subnet Route Table pointing to VPN or Direct Connect virtual interface \
 >>On-Premises Firewall/Security Configuration
 
-
 ![Route 53 Resolver-Outbound.png](/img/user/aws/Networking-Content-Delivery/Route%2053/excalidraw/Route%2053%20Resolver-Outbound.png)
 ## When and Why
 
