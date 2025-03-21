@@ -19,7 +19,7 @@ Data bases and storage systems that support ACID are **transactional system**.
 **ACID Transaction** ensures highest possible data reliability and integrity.
 
 ## How
-**Traditional Databases (RDBMS)**: Full ACID compliance
+### **Traditional Databases (RDBMS)**: Full ACID compliance
 RDBMS like PostgreSQL, MySQL and SQL Server are designed for OLAP(Online Transaction Processing) and natively enforce ACID.
 - **Priority**: All four ACID properties equally.
 - **Mechanisms**: WAL, row-level locking, strict serializability.
