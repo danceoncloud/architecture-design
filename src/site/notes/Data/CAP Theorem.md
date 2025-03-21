@@ -43,6 +43,8 @@
     - Availability is often managed through retries or transient failures (e.g., Snowflake’s auto-resume).
     - Strict consistency is critical for reporting, compliance, and data integrity in analytics.
 
+### Related Services/Resources
+[[Data/ACID Transaction\|ACID Transaction]]
 
 
 

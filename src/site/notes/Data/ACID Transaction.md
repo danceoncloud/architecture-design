@@ -64,4 +64,5 @@ Teradata, Oracle Exadata
 - Sometimes simpler management
 - Often better for specific workload patterns
 
-### Linked Service
+### Related Services/Resources
+[[Data/CAP Theorem\|CAP Theorem]]
