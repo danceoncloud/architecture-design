@@ -13,17 +13,17 @@ The AWS Virtual Private Cloud (VPC) ecosystem enables the creation of well-isola
 
 [[AWS/Networking-Content-Delivery/VPC/Architectures/A Simple Public Subnet with Internet Access\|A Simple Public Subnet with Internet Access]]
 
-[[AWS/Networking-Content-Delivery/VPC/Architectures/Private Subnet Solicits Public Internet\|Private Subnet Solicits Public Internet]]
+[[AWS/Networking-Content-Delivery/VPC/excalidraw/Private Subnet Solicits Public Internet\|Private Subnet Solicits Public Internet]]
 
 [[AWS/Networking-Content-Delivery/VPC/Architectures/Communication between VPCs through VPC Peering\|Communication between VPCs through VPC Peering]]
 
 [[AWS/Networking-Content-Delivery/VPC/Architectures/Communication between VPCs through Transit Gateway\|Communication between VPCs through Transit Gateway]]
 
-[[AWS/Networking-Content-Delivery/VPC/Architectures/Multiplayer Game Server with High Performance and Low Latency\|Multiplayer Game Server with High Performance and Low Latency]]
+[[AWS/Networking-Content-Delivery/VPC/excalidraw/Multiplayer Game Server with High Performance and Low Latency\|Multiplayer Game Server with High Performance and Low Latency]]
 
 [[AWS/Networking-Content-Delivery/VPC/Architectures/Hybrid Database Access(no public internet usage)\|Hybrid Database Access(no public internet usage)]]
 
-[[AWS/Networking-Content-Delivery/VPC/Architectures/Hybrid Network Architecture between AWS and On-Premises\|Hybrid Network Architecture between AWS and On-Premises]]
+[[AWS/Networking-Content-Delivery/VPC/excalidraw/Hybrid Network Architecture between AWS and On-Premises\|Hybrid Network Architecture between AWS and On-Premises]]
 <br>
 
 
