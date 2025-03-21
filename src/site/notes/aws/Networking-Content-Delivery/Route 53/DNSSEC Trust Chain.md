@@ -8,7 +8,7 @@ The DNSSEC (DNS Security Extensions) trust chain is a hierarchical cryptographic
 
 
 >[!info] Key Type/Records
->| Key Type / Record                     | Description                                                                                      |
+| Key Type / Record                     | Description                                                                                      |
 | ------------------------------------- | ------------------------------------------------------------------------------------------------ |
 | **KSK (Key Signing Key)**             | Signs the ZSK, ensuring integrity.                                                               |
 | **ZSK (Zone Signing Key)**            | Signs actual DNS records to validate them.                                                       |
