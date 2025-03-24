@@ -3,7 +3,7 @@
 ---
 
 ## Feature: Data Integrity and Reliability
-### Principles: 
+#### Principles: 
 [[Data/ACID\|ACID]] (Atomicity, Consistency, Isolation, Durability)
 [[Data/CAP Theorem\|CAP Theorem]] (Consistency, Availability, Partition tolerance)
 #### Mechanisms:
@@ -12,12 +12,12 @@
 - Immutable Storage
 - Transaction Logging
 #### Solution: 
-*[[AWS/Data/aws-redshift\|aws-redshift]]*: ACID via MVCC for bulk operations.
-*Snowflake*: ACID via immutable micro-partitions.
-*Databricks Delta Lake*: ACID via transaction logs on S3.
+***[[AWS/Data/aws-redshift\|aws-redshift]]***: ACID via MVCC for bulk operations.
+***Snowflake***: ACID via immutable micro-partitions.
+***Databricks Delta Lake***: ACID via transaction logs on S3.
 
 ## Feature: Data Security
-### Principles: 
+#### Principles: 
 - Defense in Depth
 - Least Privilege
 - Zero Trust
@@ -29,16 +29,16 @@
 	RBAC: assign permissions to roles (`Admin can delete records`)
 	ABAC: define roles using attributes (`IF user.department = "Finance" AND resource.sensitivity = "Low" THEN allow access`)
 #### Solution:
-*HTTPS*: SSL/TLS in transit
-AWS KMS: encryption at rest
-AWS IAM/Policy: access control
+***HTTPS***: SSL/TLS in transit
+**AWS KMS**: encryption at rest
+**AWS IAM/Policy**: access control
 
 ## Feature: Data Privacy and Compliance
-### Principles: 
+#### Principles: 
 - Data Minimization
 - Purpose Limitation
 - Privacy by Design
-### Mechanisms:
+#### Mechanisms:
 - **Data Anonymization**: Irreversible removal of identifiers (exempt from GDPR)
 	Generalization: replace exact values with ranges (age 25 -> "20-30")
 	Perturbation: add noise to data (salary 50000 -> 50000 * (0.95, 0.05))
@@ -52,9 +52,9 @@ AWS IAM/Policy: access control
 > **Tokenization** and **Pseudonymization** are explicitly recommended by GDPR to reduce risks.
 > **Anonymized data** falls outside GDPR scope.
 #### Solutions:
-*AWS Payment Cryptography*
+***AWS Payment Cryptography***
 ## Feature: Data Governance
-### Principles:
+#### Principles:
 - Single Source of Truth
 - Data Quality Management
 - Accountability
@@ -65,14 +65,14 @@ AWS IAM/Policy: access control
 - **Data Quality Enforcement**: Validity, completeness, consistency, timeliness
 - **Lifecycle Management**: Ingest->Store->Process->Archive->Delete
 #### Solutions:  
-**Ownership**: Collibra, Alation
-**Stewardship**: AWS Lake Formation
-**Metadata**: AWS Glue Data Catalog, Apache Atlas
-**Quality**: Talend Data Quality, AWS Glue DataBrew
-**Lifecycle**: AWS S3 Policies, Snowflake Time Travel
+***Ownership***: Collibra, Alation
+***Stewardship***: AWS Lake Formation
+***Metadata***: AWS Glue Data Catalog, Apache Atlas
+***Quality***: Talend Data Quality, AWS Glue DataBrew
+***Lifecycle***: AWS S3 Policies, Snowflake Time Travel
 
 ## Feature: Data Modeling & Schema Design
-### Principles: 
+#### Principles: 
 - Normalization vs Denormalization 
 - Schema-on-Read vs Schema-on-Write 
 - Dimensional Modeling
@@ -81,27 +81,26 @@ AWS IAM/Policy: access control
 - Slowly Changing Dimensions
 - Data Vault Modeling
 #### Solutions:
-*Lucidchart*
-*Snowflake Schema Builder*
-*PowerDesigner*
+***Lucidchart***
+***Snowflake Schema Builder***
+***PowerDesigner***
 
 ## Feature: Data Integration & Pipelines
-### Principles: 
-Idempotence
-Loose Coupling
-Data Freshness
+#### Principles: 
+- Idempotence
+- Loose Coupling
+- Data Freshness
 #### Mechanisms:
 - ETL vs ELT 
 - Batch vs Stream Processing 
 - Change Data Capture
 #### Solutions: 
-*Apache Spark*
-*AWS Glue* 
-*Apache Airflow*
-*AWS Stepfunction*
+***Apache Spark***
+***Apache Airflow***
+***AWS Stepfunction***
 
 ## Feature: Disaster Recovery & Backup
-### Principles: 
+#### Principles: 
 - Geographic Distribution
 - Recoverability
 #### Mechanisms:
@@ -109,9 +108,10 @@ Data Freshness
 - Cross-Region Replications
 - Immutable Backups
 #### Solutions: 
-*AWS Backup*
-*Snowflake Fail-Safe* 
-*Databricks Delta Lake versioning*
+***AWS Backup***
+***Snowflake Fail-Safe* **
+***Databricks Delta Lake versioning***
+
 
 
 
