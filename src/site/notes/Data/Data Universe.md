@@ -4,8 +4,8 @@
 
 ## Feature: Data Integrity and Reliability
 #### Principles: 
-[[Data/Theory/ACID\|ACID]] (Atomicity, Consistency, Isolation, Durability)
-[[Data/Theory/CAP Theorem\|CAP Theorem]] (Consistency, Availability, Partition tolerance)
+[[Data/Fundamental Theory/ACID\|ACID]] (Atomicity, Consistency, Isolation, Durability)
+[[Data/Fundamental Theory/CAP Theorem\|CAP Theorem]] (Consistency, Availability, Partition tolerance)
 #### Mechanisms:
 - Transaction Processing
 - Multi-Version Concurrency Control(MVCC)
@@ -109,7 +109,7 @@
 - Immutable Backups
 #### Solutions: 
 ***AWS Backup***
-***Snowflake Fail-Safe* **
+***Snowflake Fail-Safe***
 ***Databricks Delta Lake versioning***
 
 
