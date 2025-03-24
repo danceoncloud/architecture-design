@@ -12,7 +12,7 @@
 - Immutable Storage
 - Transaction Logging
 #### Solution: 
-***[[AWS/Data/aws-redshift\|aws-redshift]]***: ACID via MVCC for bulk operations.
+***[[AWS/Data/AWS Redshift\|AWS Redshift]]***: ACID via MVCC for bulk operations.
 ***Snowflake***: ACID via immutable micro-partitions.
 ***Databricks Delta Lake***: ACID via transaction logs on S3.
 
