@@ -4,8 +4,8 @@
 
 ## Feature: Data Integrity and Reliability
 #### Principles: 
-[[Data/ACID\|ACID]] (Atomicity, Consistency, Isolation, Durability)
-[[Data/CAP Theorem\|CAP Theorem]] (Consistency, Availability, Partition tolerance)
+[[Data/Theory/ACID\|ACID]] (Atomicity, Consistency, Isolation, Durability)
+[[Data/Theory/CAP Theorem\|CAP Theorem]] (Consistency, Availability, Partition tolerance)
 #### Mechanisms:
 - Transaction Processing
 - Multi-Version Concurrency Control(MVCC)
