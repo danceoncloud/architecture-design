@@ -44,7 +44,7 @@
     - Strict consistency is critical for reporting, compliance, and data integrity in analytics.
 
 ### Related Services/Resources
-[[Data/ACID Transaction\|ACID Transaction]]
+[[Data/ACID\|ACID]]
 
 
 

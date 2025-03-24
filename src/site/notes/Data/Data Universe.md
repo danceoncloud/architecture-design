@@ -22,16 +22,15 @@
 - Least Privilege
 - Zero Trust
 #### Mechanisms:
-- Encryption
-	in transit: SSL/TLS
-	at rest: AWS KMS
-- Access Control
-	RBAC: assign permissions to roles (`Admin can delete records`)
-	ABAC: define roles using attributes (`IF user.department = "Finance" AND resource.sensitivity = "Low" THEN allow access`)
+- Encryption: in transit and at rest
+- Access Control: RBAC and ABAC
 #### Solution:
 ***HTTPS***: SSL/TLS in transit
-**AWS KMS**: encryption at rest
-**AWS IAM/Policy**: access control
+***AWS KMS***: encryption at rest
+***AWS IAM/Policy***: access control
+>[!INFO] RBAC & ABAC
+>**RBAC**: assign permissions to roles (`Admin can delete records`) \
+  **ABAC**: define roles using attributes (`IF user.department = "Finance" AND resource.sensitivity = "Low" THEN allow access`)
 
 ## Feature: Data Privacy and Compliance
 #### Principles: 
@@ -76,15 +75,16 @@
 - Normalization vs Denormalization 
 - Schema-on-Read vs Schema-on-Write 
 - Dimensional Modeling
+- Slowly Changing Dimensions
 #### Mechanisms:
 - Star Schema & Snowflake Schema
-- Slowly Changing Dimensions
 - Data Vault Modeling
 #### Solutions:
 ***Lucidchart***
 ***Snowflake Schema Builder***
 ***PowerDesigner***
-
+***ER/Studio***
+***Apache Iceberg***
 ## Feature: Data Integration & Pipelines
 #### Principles: 
 - Idempotence
