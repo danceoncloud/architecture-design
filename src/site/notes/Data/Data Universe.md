@@ -39,13 +39,13 @@
 - Privacy by Design
 #### Mechanisms:
 - **Data Anonymization**: Irreversible removal of identifiers (exempt from GDPR)
-	Generalization: replace exact values with ranges (age 25 -> "20-30")
-	Perturbation: add noise to data (salary 50000 -> 50000 * (0.95, 0.05))
-	Hashing: hash data with SHA-256 with salt
-	Static Masking: permanently replace data ("Jone Doe" -> "User_123")
+	*Generalization*: replace exact values with ranges (age 25 -> "20-30")
+	*Perturbation*: add noise to data (salary 50000 -> 50000 * (0.95, 0.05))
+	*Hashing*: hash data with SHA-256 with salt
+	*Static Masking*: permanently replace data ("Jone Doe" -> "User_123")
 - **Data Pseudonymization**: Reversible replacement (GDPR-compliant with safeguards)
-	Tokenization: replace data with tokens in a secure vault
-	Dynamic Masking: make data on-the-fly based on user roles ("123-45-6789" → "--6789")	
+	*Tokenization*: replace data with tokens in a secure vault
+	*Dynamic Masking*: make data on-the-fly based on user roles ("123-45-6789" → "--6789")	
 
 > [!NOTE] Regulatory Framework: GDPR, PII, HIPAA
 > **Tokenization** and **Pseudonymization** are explicitly recommended by GDPR to reduce risks.
