@@ -43,6 +43,8 @@
 
 ### Related Services/Resources
 [[Data/Fundamental Theory/ACID\|ACID]]
+[[Data/Fundamental Theory/BASE\|BASE]]
+
 
 
 
