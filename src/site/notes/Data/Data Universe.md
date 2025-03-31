@@ -20,7 +20,7 @@
 **Columnar storage formats:** Parquet, ORC
 **Binary formats:** Avro, Protobuf, MessagePack
 
-## Fundational Data Principles
+## Foundational Data Principles
 [[Data/Fundamental Theory/ACID\|ACID]] (Atomicity, Consistency, Isolation, Durability)
 [[Data/Fundamental Theory/BASE\|BASE]] (Basically Available, Soft state, Eventually consistent)
 [[Data/Fundamental Theory/CAP Theorem\|CAP Theorem]] (Consistency, Availability, Partition tolerance)
