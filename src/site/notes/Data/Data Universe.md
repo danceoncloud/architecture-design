@@ -3,13 +3,13 @@
 ---
 
 ## Data Storage Paradigms
-- **RDBMS** (Relational Database Management System)
-- **NoSQL Databases** (Key-Value Stores, Document Stores, Columnar DBs, Graph DBs, etc.)
-- **NewSQL** (Databases with RDBMS features but distributed and scalable, e.g., CockroachDB)
+ **RDBMS** (Relational Database Management System)
+ **NoSQL Databases** (Key-Value Stores, Document Stores, Columnar DBs, Graph DBs, etc.)
+ **NewSQL** (Databases with RDBMS features but distributed and scalable, e.g., CockroachDB)
 
-- **Data Lake** (Stores raw, unstructured, and structured data)
-- **Data Warehouse** (Structured, optimized for analytics)
-- **Data Lakehouse** (Hybrid of Data Lake & Data Warehouse)
+ **Data Lake** (Stores raw, unstructured, and structured data)
+ **Data Warehouse** (Structured, optimized for analytics)
+ **Data Lakehouse** (Hybrid of Data Lake & Data Warehouse)
 
 ## Data Categorization
 - **Structured Data** (Tables with predefined schema, e.g., RDBMS)
