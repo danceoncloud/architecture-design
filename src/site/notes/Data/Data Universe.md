@@ -1,31 +1,30 @@
 ---
-{"dg-publish":true,"permalink":"/data/data-universe/","title":"Data Universe"}
+{"dg-publish":true,"permalink":"/data/data-universe/","title":"Data Universe: Principles, Architectures and Modern Solutions"}
 ---
 
-## Data Storage Paradigms
+## Data Storage & Processing Paradigms
+### Database Systems
  **RDBMS** (Relational Database Management System)
  **NoSQL Databases** (Key-Value Stores, Document Stores, Columnar DBs, Graph DBs, etc.)
  **NewSQL** (Databases with RDBMS features but distributed and scalable, e.g., CockroachDB)
-
+### Data Storage Architectures
  **Data Lake** (Stores raw, unstructured, and structured data)
  **Data Warehouse** (Structured, optimized for analytics)
  **Data Lakehouse** (Hybrid of Data Lake & Data Warehouse)
-
-## Data Categorization
+### Data Categorization
 **Structured Data** (Tables with predefined schema, e.g., RDBMS)
 **Semi-Structured Data** (JSON, XML, Avro, Parquet, etc.)
 **Unstructured Data** (Images, Videos, Audio, PDFs, Raw Text)
-
-## File Formats
+### File Formats
 **Text-based:** TXT, CSV, JSON, XML, YAML
 **Columnar storage formats:** Parquet, ORC
 **Binary formats:** Avro, Protobuf, MessagePack
 
-## Fundamental Principles
-### [[Data/Fundamental Theory/ACID\|ACID]] (Atomicity, Consistency, Isolation, Durability)
-### BASE (Basically Available, Soft state, Eventually consistent)
-### [[Data/Fundamental Theory/CAP Theorem\|CAP Theorem]] (Consistency, Availability, Partition tolerance)
-### PACELC Theorem (Partition, Availability, Consistency, Else, Latency, Consistency)
+## Fundational Data Principles
+[[Data/Fundamental Theory/ACID\|ACID]] (Atomicity, Consistency, Isolation, Durability)
+BASE (Basically Available, Soft state, Eventually consistent)
+[[Data/Fundamental Theory/CAP Theorem\|CAP Theorem]] (Consistency, Availability, Partition tolerance)
+PACELC Theorem (Partition, Availability, Consistency, Else, Latency, Consistency)
 ### Data Architecture Design: Balancing ACID, CAP, BASE, and PACELC
 
 ## Feature: Data Security
