@@ -12,14 +12,14 @@
  **Data Lakehouse** (Hybrid of Data Lake & Data Warehouse)
 
 ## Data Categorization
-- **Structured Data** (Tables with predefined schema, e.g., RDBMS)
-- **Semi-Structured Data** (JSON, XML, Avro, Parquet, etc.)
-- **Unstructured Data** (Images, Videos, Audio, PDFs, Raw Text)
+**Structured Data** (Tables with predefined schema, e.g., RDBMS)
+**Semi-Structured Data** (JSON, XML, Avro, Parquet, etc.)
+**Unstructured Data** (Images, Videos, Audio, PDFs, Raw Text)
 
 ## File Formats
-- **Text-based:** TXT, CSV, JSON, XML, YAML
-- **Columnar storage formats:** Parquet, ORC
-- **Binary formats:** Avro, Protobuf, MessagePack
+**Text-based:** TXT, CSV, JSON, XML, YAML
+**Columnar storage formats:** Parquet, ORC
+**Binary formats:** Avro, Protobuf, MessagePack
 
 ## Fundamental Principles
 ### [[Data/Fundamental Theory/ACID\|ACID]] (Atomicity, Consistency, Isolation, Durability)
