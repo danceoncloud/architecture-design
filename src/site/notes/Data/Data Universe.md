@@ -22,10 +22,10 @@
 
 ## Fundational Data Principles
 [[Data/Fundamental Theory/ACID\|ACID]] (Atomicity, Consistency, Isolation, Durability)
-BASE (Basically Available, Soft state, Eventually consistent)
+[[Data/Fundamental Theory/BASE\|BASE]] (Basically Available, Soft state, Eventually consistent)
 [[Data/Fundamental Theory/CAP Theorem\|CAP Theorem]] (Consistency, Availability, Partition tolerance)
 PACELC Theorem (Partition, Availability, Consistency, Else, Latency, Consistency)
-### Data Architecture Design: Balancing ACID, CAP, BASE, and PACELC
+**Data Architecture Design: Balancing ACID, CAP, BASE, and PACELC**
 
 ## Feature: Data Security
 #### Principles: 
