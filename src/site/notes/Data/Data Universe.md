@@ -2,30 +2,35 @@
 {"dg-publish":true,"permalink":"/data/data-universe/","title":"Data Universe: Principles, Architectures and Modern Solutions"}
 ---
 
-## Data Storage & Processing Paradigms
-### Database Systems
- **RDBMS** (Relational Database Management System)
- **NoSQL Databases** (Key-Value Stores, Document Stores, Columnar DBs, Graph DBs, etc.)
- **NewSQL** (Databases with RDBMS features but distributed and scalable, e.g., CockroachDB)
-### Data Storage Architectures
- **Data Lake** (Stores raw, unstructured, and structured data)
- **Data Warehouse** (Structured, optimized for analytics)
- **Data Lakehouse** (Hybrid of Data Lake & Data Warehouse)
+## Data Storage & Processing Taxonomy
+### Data at Rest 
+**RDBMS** (ACID + SQL, vertical scalability)
+**NoSQL Databases** (Schema-less, favor availability and scalability over strong consistency)
+**NewSQL** (Distributed databases + ACID)
+**In-Memory Databases** (Speed focused)
+
+**Data Lake** (Raw storage, massive storage with low cost)
+**Data Warehouse** (OLAP-optimized)
+**Data Lakehouse** (Raw storage + ACID + SQL)
+### Data in Motion
+**Event Streaming**: Apache Kafka, AWS Kinesis, Google Pub/Sub
+**API**: Rest APIs, gRPC, GraphQL, WebSocket
+**Message Queues**: AWS SQN, Apache ActiveMQ
+**Real-Time ETL/Processing**: Apache Spark Streaming, Apache Flink
+**Edge/Device Data Ingestion**: AWS IoT Core, Apache Nifi, Azure IoT Hub
 ### Data Categorization
 **Structured Data** (Tables with predefined schema, e.g., RDBMS)
-**Semi-Structured Data** (JSON, XML, Avro, Parquet, etc.)
+**Semi-Structured Data** (data with predefined schema with schema evolution, JSON, XML, Avro, Parquet, etc.)
 **Unstructured Data** (Images, Videos, Audio, PDFs, Raw Text)
-### File Formats
+### Featured File Formats
 **Text-based:** TXT, CSV, JSON, XML, YAML
 **Columnar storage formats:** Parquet, ORC
 **Binary formats:** Avro, Protobuf, MessagePack
-
 ## Foundational Data Principles
 [[Data/Fundamental Theory/ACID\|ACID]] (Atomicity, Consistency, Isolation, Durability)
 [[Data/Fundamental Theory/BASE\|BASE]] (Basically Available, Soft state, Eventually consistent)
 [[Data/Fundamental Theory/CAP Theorem\|CAP Theorem]] (Consistency, Availability, Partition tolerance)
-PACELC Theorem (Partition, Availability, Consistency, Else, Latency, Consistency)
-**Data Architecture Design: Balancing ACID, CAP, BASE, and PACELC**
+[[Data/Fundamental Theory/PACELC Theorem\|PACELC Theorem]] (Partition, Availability, Consistency, Else, Latency, Consistency)
 
 ## Feature: Data Security
 #### Principles: 
