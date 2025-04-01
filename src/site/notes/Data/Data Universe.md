@@ -3,7 +3,7 @@
 ---
 
 ## Data Storage & Processing Taxonomy
-### Data at Rest 
+### Data-at-Rest 
 **RDBMS** (ACID + SQL, vertical scalability)
 **NoSQL Databases** (Schema-less, favor availability and scalability over strong consistency)
 **NewSQL** (Distributed databases + ACID)
@@ -12,12 +12,12 @@
 **Data Lake** (Raw storage, massive storage with low cost)
 **Data Warehouse** (OLAP-optimized)
 **Data Lakehouse** (Raw storage + ACID + SQL)
-### Data in Motion
-**Event Streaming**: Apache Kafka, AWS Kinesis, Google Pub/Sub
-**API**: Rest APIs, gRPC, GraphQL, WebSocket
-**Message Queues**: AWS SQN, Apache ActiveMQ
-**Real-Time ETL/Processing**: Apache Spark Streaming, Apache Flink
-**Edge/Device Data Ingestion**: AWS IoT Core, Apache Nifi, Azure IoT Hub
+### Data-in-Motion
+**Event Streaming**: Ingest, process and deliver high-velocity event streams.
+**API**: Serve or consume data via APIs (synchronous/asynchronous).
+**Message Queues**: Decouple producers/consumers with asynchronous messaging.
+**Real-Time ETL/Processing**: Transform and enrich data in-flight
+**Edge/Device Data Ingestion**: Collect and process data from IoT devices or edge locations.
 ### Data Categorization
 **Structured Data** (Tables with predefined schema, e.g., RDBMS)
 **Semi-Structured Data** (data with predefined schema with schema evolution, JSON, XML, Avro, Parquet, etc.)
