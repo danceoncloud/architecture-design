@@ -2,6 +2,16 @@
 {"dg-publish":true,"permalink":"/data/data-universe/","title":"Data Universe: Principles, Architectures and Modern Solutions"}
 ---
 
+
+## Data Categorization and File Formats
+### Data Categorization
+**Structured Data** (Tables with predefined schema, e.g., RDBMS)
+**Semi-Structured Data** (data with predefined schema with schema evolution, JSON, XML, Avro, Parquet, etc.)
+**Unstructured Data** (Images, Videos, Audio, PDFs, Raw Text)
+### Featured File Formats
+**Text-based:** TXT, CSV, JSON, XML, YAML
+**Columnar storage formats:** Parquet, ORC
+**Binary formats:** Avro, Protobuf, MessagePack
 ## Data Storage & Processing Taxonomy
 ### Data-at-Rest 
 **RDBMS** (ACID + SQL, vertical scalability)
@@ -18,14 +28,7 @@
 **Message Queues**: Decouple producers/consumers with asynchronous messaging.
 **Real-Time ETL/Processing**: Transform and enrich data in-flight
 **Edge/Device Data Ingestion**: Collect and process data from IoT devices or edge locations.
-### Data Categorization
-**Structured Data** (Tables with predefined schema, e.g., RDBMS)
-**Semi-Structured Data** (data with predefined schema with schema evolution, JSON, XML, Avro, Parquet, etc.)
-**Unstructured Data** (Images, Videos, Audio, PDFs, Raw Text)
-### Featured File Formats
-**Text-based:** TXT, CSV, JSON, XML, YAML
-**Columnar storage formats:** Parquet, ORC
-**Binary formats:** Avro, Protobuf, MessagePack
+
 ## Foundational Data Principles
 [[Data/Fundamental Theory/ACID\|ACID]] (Atomicity, Consistency, Isolation, Durability)
 [[Data/Fundamental Theory/BASE\|BASE]] (Basically Available, Soft state, Eventually consistent)
