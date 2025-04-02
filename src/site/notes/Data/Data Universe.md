@@ -34,7 +34,7 @@
 [[Data/Fundamental Theory/BASE\|BASE]] (Basically Available, Soft state, Eventually consistent)
 [[Data/Fundamental Theory/CAP Theorem\|CAP Theorem]] (Consistency, Availability, Partition tolerance)
 [[Data/Fundamental Theory/PACELC Theorem\|PACELC Theorem]] (Partition, Availability, Consistency, Else, Latency, Consistency)
-[[Data/Purpose-Driven Data Architecture\|Purpose-Driven Data Architecture]]
+[[Data/Purpose-Driven Data Architecture\|Purpose-Driven Data Architecture]]: A Quick Guide to Find the First Component of Data Project
 ## Feature: Data Security
 ### Principles: 
 - Defense in Depth
@@ -50,7 +50,6 @@
 >[!INFO] RBAC & ABAC
 >**RBAC**: assign permissions to roles (`Admin can delete records`) \
   **ABAC**: define roles using attributes (`IF user.department = "Finance" AND resource.sensitivity = "Low" THEN allow access`)
-
 ## Feature: Data Privacy and Compliance
 ### Principles: 
 - Data Minimization
@@ -88,7 +87,6 @@
 **Metadata**: AWS Glue Data Catalog, Apache Atlas
 **Quality**: Talend Data Quality, AWS Glue DataBrew
 **Lifecycle**: AWS S3 Policies, Snowflake Time Travel
-
 ## Feature: Data Modeling & Schema Design
 ### Principles: 
 - Normalization vs Denormalization 
@@ -117,7 +115,6 @@
 **Apache Spark**
 **Apache Airflow**
 **AWS Stepfunction**
-
 ## Feature: Disaster Recovery & Backup
 ### Principles: 
 - Geographic Distribution
