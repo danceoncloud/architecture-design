@@ -29,12 +29,12 @@
 **Real-Time ETL/Processing**: Transform and enrich data in-flight
 **Edge/Device Data Ingestion**: Collect and process data from IoT devices or edge locations.
 
-## Foundational Data Principles
+## Foundational Principles for Guarantees and Trade-Offs on Data-at-Rest
 [[Data/Fundamental Theory/ACID\|ACID]] (Atomicity, Consistency, Isolation, Durability)
 [[Data/Fundamental Theory/BASE\|BASE]] (Basically Available, Soft state, Eventually consistent)
 [[Data/Fundamental Theory/CAP Theorem\|CAP Theorem]] (Consistency, Availability, Partition tolerance)
 [[Data/Fundamental Theory/PACELC Theorem\|PACELC Theorem]] (Partition, Availability, Consistency, Else, Latency, Consistency)
-
+[[Data/Purpose-Driven Data Architecture\|Purpose-Driven Data Architecture]]
 ## Feature: Data Security
 #### Principles: 
 - Defense in Depth
