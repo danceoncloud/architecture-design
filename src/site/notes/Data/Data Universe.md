@@ -17,7 +17,6 @@
 **RDBMS** (ACID + SQL, vertical scalability)
 **NoSQL Databases** (Schema-less, favor availability and scalability over strong consistency)
 **NewSQL** (Distributed databases + ACID)
-**In-Memory Databases** (Speed focused)
 
 **Data Lake** (Raw storage, massive storage with low cost)
 **Data Warehouse** (OLAP-optimized)
@@ -37,11 +36,11 @@
 [[Data/Purpose-Driven Data Architecture\|Purpose-Driven Data Architecture]]: A Quick Guide to Find the First Component of Data Project
 ## Feature: Data Security
 ### Principles: 
-- Defense in Depth
-- Least Privilege
-- Zero Trust
+- Defense in Depth: use layered security (firewalls, encryption, access controls)to reduce single points of failure.
+- Least Privilege: always the minimum access to perform tasks.
+- Zero Trust: verify every access request.
 ### Mechanisms:
-- Encryption: in transit and at rest
+- Encryption: in transit and at *rest*
 - Access Control: RBAC and ABAC
 ### Solution:
 **HTTPS**: SSL/TLS in transit
@@ -50,11 +49,10 @@
 >[!INFO] RBAC & ABAC
 >**RBAC**: assign permissions to roles (`Admin can delete records`) \
   **ABAC**: define roles using attributes (`IF user.department = "Finance" AND resource.sensitivity = "Low" THEN allow access`)
-## Feature: Data Privacy and Compliance
+## Feature:  Data Compliance
 ### Principles: 
-- Data Minimization
-- Purpose Limitation
-- Privacy by Design
+- Data Classification: categorize data based on sensitivity level with appropriate protection measures.
+- Privacy by Design: embed data protection from the start (GDPR compliance)
 ### Mechanisms:
 - **Data Anonymization**: Irreversible removal of identifiers (exempt from GDPR)
 	*Generalization*: replace exact values with ranges (age 25 -> "20-30")
@@ -69,24 +67,25 @@
 > **Tokenization** and **Pseudonymization** are explicitly recommended by GDPR to reduce risks.
 > **Anonymized data** falls outside GDPR scope.
 ### Solutions:
-**AWS Payment Cryptography**
+AWS Compliance Tools, Google Cloud Compliance Controls, Microsoft Compliance Manager
 ## Feature: Data Governance
 ### Principles:
-- Single Source of Truth
+- Accountability & Ownership
+- Standardization
+- Data Provenance & Lineage
+- Retention & Disposal
 - Data Quality Management
-- Accountability
+- Audit
 ### Mechanisms:
 - **Ownership**: Assign accountability for datasets
 - **Stewardship**: Individuals/teams responsible for data accuracy, compliance, and usability
 - **Metadata Management**: Track data lineage, definitions, and usage
 - **Data Quality Enforcement**: Validity, completeness, consistency, timeliness
-- **Lifecycle Management**: Ingest->Store->Process->Archive->Delete
+- **Retention & Disposal**: Ingest->Store->Process->Archive->Delete
 ### Solutions:  
-**Ownership**: Collibra, Alation
-**Stewardship**: AWS Lake Formation
-**Metadata**: AWS Glue Data Catalog, Apache Atlas
+**Data Lineage & Metadata**: Collibra, Alation, AWS Lake Formation
 **Quality**: Talend Data Quality, AWS Glue DataBrew
-**Lifecycle**: AWS S3 Policies, Snowflake Time Travel
+**Retention & Disposal**: AWS S3 Policies, Snowflake Time Travel
 ## Feature: Data Modeling & Schema Design
 ### Principles: 
 - Normalization vs Denormalization 
