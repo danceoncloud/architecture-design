@@ -29,11 +29,15 @@
 **Edge/Device Data Ingestion**: Collect and process data from IoT devices or edge locations.
 
 ## Foundational Principles for Guarantees and Trade-Offs on Data-at-Rest
-[[Data/Fundamental Theory/ACID\|ACID]] (Atomicity, Consistency, Isolation, Durability)
-[[Data/Fundamental Theory/BASE\|BASE]] (Basically Available, Soft state, Eventually consistent)
+### Theoretical Frameworks for Unavoidable Trade-Offs in Distributed Systems
 [[Data/Fundamental Theory/CAP Theorem\|CAP Theorem]] (Consistency, Availability, Partition tolerance)
 [[Data/Fundamental Theory/PACELC Theorem\|PACELC Theorem]] (Partition, Availability, Consistency, Else, Latency, Consistency)
+### Practical Design Philosophies for Transactions
+[[Data/Fundamental Theory/ACID\|ACID]] (Atomicity, Consistency, Isolation, Durability)
+[[Data/Fundamental Theory/BASE\|BASE]] (Basically Available, Soft state, Eventually consistent)
+### Theory to Practice
 [[Data/Purpose-Driven Data Architecture\|Purpose-Driven Data Architecture]]: A Quick Guide to Find the First Component of Data Project
+
 ## Feature: Data Security
 ### Principles: 
 - Defense in Depth: use layered security (firewalls, encryption, access controls)to reduce single points of failure.
@@ -49,7 +53,7 @@
 >[!INFO] RBAC & ABAC
 >**RBAC**: assign permissions to roles (`Admin can delete records`) \
   **ABAC**: define roles using attributes (`IF user.department = "Finance" AND resource.sensitivity = "Low" THEN allow access`)
-## Feature:  Data Compliance
+## Feature: Data Compliance
 ### Principles: 
 - Data Classification: categorize data based on sensitivity level with appropriate protection measures.
 - Privacy by Design: embed data protection from the start (GDPR compliance)
