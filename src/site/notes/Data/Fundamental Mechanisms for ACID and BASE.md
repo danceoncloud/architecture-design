@@ -15,14 +15,14 @@
 
 **Isolation Levels and Anomaly Prevention**
 
-| **Isolation Level**        | **Dirty Reads** | **Non-Repeatable Reads** | **Phantom Reads** | **Write Skew** | **Implementation Examples**                                                                      |
-| -------------------------- | --------------- | ------------------------ | ----------------- | -------------- | ------------------------------------------------------------------------------------------------ |
-| **Read Uncommitted**       | ❌ Allowed       | ❌ Allowed                | ❌ Allowed         | ❌ Allowed      | SQL Server (with `NOLOCK` hint), MySQL (rarely used).                                            |
-| **Read Committed**         | ✅ Prevented     | ❌ Allowed                | ❌ Allowed         | ❌ Allowed      | PostgreSQL (default), Oracle (default), SQL Server.                                              |
-| **Repeatable Read**        | ✅ Prevented     | ✅ Prevented              | ❌ Allowed         | ❌ Allowed      | MySQL/InnoDB (default, prevents phantoms via gap locks), PostgreSQL (prevents phantoms via SSI). |
-| **Snapshot Isolation**     | ✅ Prevented     | ✅ Prevented              | ❌ Allowed*        | ❌ Allowed      | SQL Server (`SNAPSHOT_ISOLATION`), Oracle (`READ COMMITTED` with undo retention).                |
-| **Serializable**           | ✅ Prevented     | ✅ Prevented              | ✅ Prevented       | ✅ Prevented    | SQL Server (key-range locks), PostgreSQL (SSI), Oracle (predicate locking).                      |
-| **Strict Serializability** | ✅ Prevented     | ✅ Prevented              | ✅ Prevented       | ✅ Prevented    | Google Spanner, CockroachDB (via TrueTime/SSI), FoundationDB.                                    |
+| **Isolation Level**        | **Dirty Reads** | **Non-Repeatable Reads** | **Phantom Reads** | **Write Skew** |
+| -------------------------- | --------------- | ------------------------ | ----------------- | -------------- |
+| **Read Uncommitted**       | ❌ Allowed       | ❌ Allowed                | ❌ Allowed         | ❌ Allowed      |
+| **Read Committed**         | ✅ Prevented     | ❌ Allowed                | ❌ Allowed         | ❌ Allowed      |
+| **Repeatable Read**        | ✅ Prevented     | ✅ Prevented              | ❌ Allowed         | ❌ Allowed      |
+| **Snapshot Isolation**     | ✅ Prevented     | ✅ Prevented              | ❌ Allowed*        | ❌ Allowed      |
+| **Serializable**           | ✅ Prevented     | ✅ Prevented              | ✅ Prevented       | ✅ Prevented    |
+| **Strict Serializability** | ✅ Prevented     | ✅ Prevented              | ✅ Prevented       | ✅ Prevented    |
 
 > [!success]- Lock Granularity: Concurrency vs Locking Overhead
 > Locks are the fundamental building blocks that help implementing isolation by controlling access to shared data.
