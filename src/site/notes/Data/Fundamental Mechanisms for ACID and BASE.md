@@ -10,8 +10,8 @@
 **[[Data/Fundamental Theory/Two-Phase Commit (2PC)\|Two-Phase Commit (2PC)]]**
 **[[Data/Fundamental Theory/Compensating Transactions (Sagas)\|Compensating Transactions (Sagas)]]**
 
->[!tip]- SAGA vs 2PC
->
+**SAGA vs 2PC**
+
 | **Aspect**           | **SAGAs**                                 | **Two-Phase Commit (2PC)**                          |
 | -------------------- | ----------------------------------------- | --------------------------------------------------- |
 | **Consistency**      | Eventual (asynchronous).                  | Immediate (strong, ACID).                           |
