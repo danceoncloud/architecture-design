@@ -19,7 +19,7 @@ If any step fails, the SAGA triggers **compensating transaction in reverse order
 **Pros**: Flexible, no central coordinator.
 **Cons**: Complex to debug.
 
-### Orchestration-Based SAGAs**:
+### Orchestration-Based SAGAs:
 **Centralized**: A coordinator manages the workflow.
 **Pros**: Centralized logic, easier to track.
 **Cons**: Single point of failure.
