@@ -37,14 +37,14 @@
 [[Data/Fundamental Theory/BASE\|BASE]] (Basically Available, Soft state, Eventually consistent)
 ### Theory to Practice
 [[Data/Purpose-Driven Data Architecture\|Purpose-Driven Data Architecture]]: A Quick Guide to Find the First Component of Data Project
-
+[[Data/Fundamental Mechanisms for ACID and BASE\|Fundamental Mechanisms for ACID and BASE]]
 ## Feature: Data Security
 ### Principles: 
 - Defense in Depth: use layered security (firewalls, encryption, access controls)to reduce single points of failure.
 - Least Privilege: always the minimum access to perform tasks.
 - Zero Trust: verify every access request.
 ### Mechanisms:
-- Encryption: in transit and at *rest*
+- Encryption: in transit and at rest
 - Access Control: RBAC and ABAC
 ### Solution:
 **HTTPS**: SSL/TLS in transit
