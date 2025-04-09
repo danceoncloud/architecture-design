@@ -11,6 +11,7 @@
 **[[Data/Fundamental Theory/Compensating Transactions (Sagas)\|Compensating Transactions (Sagas)]]**
 
 >[!tip]- SAGA vs 2PC
+>
 | **Aspect**           | **SAGAs**                                 | **Two-Phase Commit (2PC)**                          |
 | -------------------- | ----------------------------------------- | --------------------------------------------------- |
 | **Consistency**      | Eventual (asynchronous).                  | Immediate (strong, ACID).                           |
@@ -80,14 +81,17 @@
 - One node designated as leader for writes
 - Followers replicate data from leader
 - Examples: MongoDB replica sets, PostgreSQL streaming replication, MySQL replication
+
 **Multi-Leader**
 - Multiple nodes can accept writes
 - Each leader replicates to other leaders and its followers
 - Examples: CockroachDB, some MySQL and PostgreSQL configurations
+
 **Leaderless/Peer-to-Peer**
 - Any node can accept writes
 - Consistency often managed via quorum writes and vector clocks
 - Examples: Cassandra, Amazon Dynamo, Riak
+
 **Consensus-Based**
 - Uses algorithms like Raft or Paxos to achieve agreement
 - Typically requires majority agreement for writes
@@ -96,17 +100,21 @@
 **Range Partitioning**
 - Data divided based on ranges of a key value
 - Example: Users A-M on Server 1, N-Z on Server 2
+
 **Hash Partitioning**
 - Apply hash function to the partition key to determine placement
 - Distributes data more evenly
 - May complicate range queries
 - Example: hash(user_id) % 4 determines server placement
+
 **Consistent Hashing**
 - Special hash technique that minimizes data redistribution when adding/removing nodes
 - Used in many NoSQL databases and distributed caches
+
 **Directory-Based Partitioning**
 - Maintains a lookup table mapping keys to partitions
 - More flexible but adds lookup overhead
+
 **Composite Partitioning**
 - Combines multiple strategies (e.g., hash + range)
 - Used in sophisticated systems like Cassandra (compound partition keys)
