@@ -81,7 +81,7 @@
 > - Examples: CockroachDB, some MySQL and PostgreSQL configurations
 
 **Leaderless/Peer-to-Peer**
-> [!info]- Details
+> [!example]- Details
 > - Any node can accept writes
 > - Consistency often managed via quorum writes and vector clocks
 > - Examples: Cassandra, Amazon Dynamo, Riak
@@ -93,7 +93,7 @@
 > - Examples: etcd, Zookeeper, Consul
 #### Partition/Sharding
 **Range Partitioning**
-> [!info]- Details
+> [!example]- Details
 > - Data divided based on ranges of a key value
 > - Example: Users A-M on Server 1, N-Z on Server 2
 
@@ -105,7 +105,7 @@
 > - Example: hash(user_id) % 4 determines server placement
 
 **Consistent Hashing**
-> [!info]- Details
+> [!example]- Details
 > - Special hash technique that minimizes data redistribution when adding/removing nodes
 > - Used in many NoSQL databases and distributed caches
 
@@ -115,16 +115,19 @@
 > - More flexible but adds lookup overhead
 
 **Composite Partitioning**
-> [!info]- Details
+> [!example]- Details
 > - Combines multiple strategies (e.g., hash + range)
 > - Used in sophisticated systems like Cassandra (compound partition keys)
 
 #### Node Failure Handling
 **Hinted Handoff**
-- When a node is down, another node temporarily stores its writes as "hints"
-- When the failed node recovers, hints are forwarded to catch it up
-- Ensures writes aren't lost when destination nodes are temporarily unavailable
-- Helps maintain eventual consistency when nodes recover
+
+> [!info]- Details
+> - When a node is down, another node temporarily stores its writes as "hints"
+> - When the failed node recovers, hints are forwarded to catch it up
+> - Ensures writes aren't lost when destination nodes are temporarily unavailable
+> - Helps maintain eventual consistency when nodes recover
+
 ### Consistency
 **Strong Consistency**:
 - Two-phase commit (2PC)
