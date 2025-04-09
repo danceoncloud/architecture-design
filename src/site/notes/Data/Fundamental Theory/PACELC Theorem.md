@@ -16,7 +16,6 @@
 
 ## Why
 **PACELC** is important because it recognizes that distributed systems face important trade-offs even when operating normally without network failures. This framework helps architect to make better-informed decisions about distributed architecture based on their specific requirements for both failure scenarios and day-to-day operations.
-
 ## How
 ### **During Network Partition (P -> A/C):**
 aligns with CAP Theorem:
@@ -26,12 +25,28 @@ aligns with CAP Theorem:
 **Low Latency (L)**: relax consistency for faster responses.
 **Strong Consistency (C)**: accept higher latency to ensure data accuracy.
 
+## Latency
+**Key Metrics to Measure Latency**
+- **Average Response Time**: Baseline latency for read/write operations.
+- **Tail Latency (e.g., 99th percentile)**: Measures worst-case delays.
+- **Time to Consistency**:
+    - For AP systems: Time until all replicas converge after a write.
+- **Network Latency**:
+    - Between nodes (e.g., inter-region vs. intra-region).
+- **Coordination Overhead**:
+    - Time spent in consensus protocols (e.g., Raft, Paxos) or quorum coordination.    
+- **Replication Lag**:
+    - Delay in propagating writes to replicas (AP systems).
 ### Examples
 **AWS DynamoDB**: PA/EL
 **Google Spanner**: PC/EC
 **Apache Cassandra**: PA/EL
 **CockroachDB**: PC/EC
 
+### Related Services/Resources
+[[Data/Fundamental Theory/ACID\|ACID]]
+[[Data/Fundamental Theory/BASE\|BASE]]
+[[Data/Fundamental Theory/CAP Theorem\|CAP Theorem]]
 
 
 
