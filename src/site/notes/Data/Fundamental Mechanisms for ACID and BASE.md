@@ -69,7 +69,7 @@
 ### Scalability and Availability
 #### Replication
 **Leader-Follower (Primary-Secondary)**
-> [!info]- Details
+> [!example]- Details
 > - One node designated as leader for writes
 > - Followers replicate data from leader
 > - Examples: MongoDB replica sets, PostgreSQL streaming replication, MySQL replication
