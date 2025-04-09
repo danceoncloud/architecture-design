@@ -13,14 +13,12 @@
 ### Isolation
 **Isolation Level** is the guarantee offered by different solutions and **Locking Mechanism** is how the guarantee is achieved.
 
-**Isolation Levels and Anomaly Prevention**
-
 | **Isolation Level**        | **Dirty Reads** | **Non-Repeatable Reads** | **Phantom Reads** | **Write Skew** |
 | -------------------------- | --------------- | ------------------------ | ----------------- | -------------- |
 | **Read Uncommitted**       | ❌ Allowed       | ❌ Allowed                | ❌ Allowed         | ❌ Allowed      |
 | **Read Committed**         | ✅ Prevented     | ❌ Allowed                | ❌ Allowed         | ❌ Allowed      |
 | **Repeatable Read**        | ✅ Prevented     | ✅ Prevented              | ❌ Allowed         | ❌ Allowed      |
-| **Snapshot Isolation**     | ✅ Prevented     | ✅ Prevented              | ❌ Allowed*        | ❌ Allowed      |
+| **Snapshot Isolation**     | ✅ Prevented     | ✅ Prevented              | ❌ Allowed         | ❌ Allowed      |
 | **Serializable**           | ✅ Prevented     | ✅ Prevented              | ✅ Prevented       | ✅ Prevented    |
 | **Strict Serializability** | ✅ Prevented     | ✅ Prevented              | ✅ Prevented       | ✅ Prevented    |
 
@@ -47,7 +45,7 @@
 ### Durability
 **[[Data/Fundamental Theory/Write-Ahead Logging\|Write-Ahead Logging]]**
 
-> [!important]- Complete Solution: WAL + `fsync` + Check pointing + Check summing
+> [!important]- Complete Solution: WAL + `fsync` + Check pointing + Checksumming
 > **`fsync`** is a system call that forces the operating system to flush all modified data for a file to the physical storage device.
 >>- Without fsync, data might remain in OS buffers/cache and not be physically written to disk
 >>- The OS acknowledges write completion only after data is physically on disk 
@@ -79,6 +77,7 @@
 > - Multiple nodes can accept writes
 > - Each leader replicates to other leaders and its followers
 > - Examples: CockroachDB, some MySQL and PostgreSQL configurations
+> - Attention: require conflict detection/resolution in systems like Cassandra.
 
 **Leaderless/Peer-to-Peer**
 > [!example]- Details
@@ -146,7 +145,6 @@
 - Last-Write-Wins conflict resolution
 - CRDTs (Conflict-free Replicated Data Types)
 - Anti-entropy processes
-- Merkle trees for synchronization
 
 > [!warning]
 > - Some mechanisms (e.g., leases, sharding) can appear in both CP/AP systems depending on implementation.
