@@ -10,15 +10,6 @@
 **[[Data/Fundamental Theory/Two-Phase Commit (2PC)\|Two-Phase Commit (2PC)]]**
 **[[Data/Fundamental Theory/Compensating Transactions (Sagas)\|Compensating Transactions (Sagas)]]**
 
-**SAGA vs 2PC**
-
-| **Aspect**           | **SAGAs**                                 | **Two-Phase Commit (2PC)**                          |
-| -------------------- | ----------------------------------------- | --------------------------------------------------- |
-| **Consistency**      | Eventual (asynchronous).                  | Immediate (strong, ACID).                           |
-| **Scalability**      | High (non-blocking).                      | Low (coordinator and locks create bottlenecks).     |
-| **Use Case**         | Long-running, cross-service transactions. | Short, atomic transactions (e.g., banking).         |
-| **Failure Handling** | Compensations reverse partial updates.    | Blocking, manual intervention if coordinator fails. |
-
 ### Isolation
 **Isolation Level** is the guarantee offered by different solutions and **Locking Mechanism** is how the guarantee is achieved.
 
@@ -78,46 +69,56 @@
 ### Scalability and Availability
 #### Replication
 **Leader-Follower (Primary-Secondary)**
-- One node designated as leader for writes
-- Followers replicate data from leader
-- Examples: MongoDB replica sets, PostgreSQL streaming replication, MySQL replication
+> [!info]- Details
+> - One node designated as leader for writes
+> - Followers replicate data from leader
+> - Examples: MongoDB replica sets, PostgreSQL streaming replication, MySQL replication
 
 **Multi-Leader**
-- Multiple nodes can accept writes
-- Each leader replicates to other leaders and its followers
-- Examples: CockroachDB, some MySQL and PostgreSQL configurations
+> [!info]- Details
+> - Multiple nodes can accept writes
+> - Each leader replicates to other leaders and its followers
+> - Examples: CockroachDB, some MySQL and PostgreSQL configurations
 
 **Leaderless/Peer-to-Peer**
-- Any node can accept writes
-- Consistency often managed via quorum writes and vector clocks
-- Examples: Cassandra, Amazon Dynamo, Riak
+> [!info]- Details
+> - Any node can accept writes
+> - Consistency often managed via quorum writes and vector clocks
+> - Examples: Cassandra, Amazon Dynamo, Riak
 
 **Consensus-Based**
-- Uses algorithms like Raft or Paxos to achieve agreement
-- Typically requires majority agreement for writes
-- Examples: etcd, Zookeeper, Consul
+> [!info]- Details
+> - Uses algorithms like Raft or Paxos to achieve agreement
+> - Typically requires majority agreement for writes
+> - Examples: etcd, Zookeeper, Consul
 #### Partition/Sharding
 **Range Partitioning**
-- Data divided based on ranges of a key value
-- Example: Users A-M on Server 1, N-Z on Server 2
+> [!info]- Details
+> - Data divided based on ranges of a key value
+> - Example: Users A-M on Server 1, N-Z on Server 2
 
 **Hash Partitioning**
-- Apply hash function to the partition key to determine placement
-- Distributes data more evenly
-- May complicate range queries
-- Example: hash(user_id) % 4 determines server placement
+> [!info]- Details
+> - Apply hash function to the partition key to determine placement
+> - Distributes data more evenly
+> - May complicate range queries
+> - Example: hash(user_id) % 4 determines server placement
 
 **Consistent Hashing**
-- Special hash technique that minimizes data redistribution when adding/removing nodes
-- Used in many NoSQL databases and distributed caches
+> [!info]- Details
+> - Special hash technique that minimizes data redistribution when adding/removing nodes
+> - Used in many NoSQL databases and distributed caches
 
 **Directory-Based Partitioning**
-- Maintains a lookup table mapping keys to partitions
-- More flexible but adds lookup overhead
+> [!info]- Details
+> - Maintains a lookup table mapping keys to partitions
+> - More flexible but adds lookup overhead
 
 **Composite Partitioning**
-- Combines multiple strategies (e.g., hash + range)
-- Used in sophisticated systems like Cassandra (compound partition keys)
+> [!info]- Details
+> - Combines multiple strategies (e.g., hash + range)
+> - Used in sophisticated systems like Cassandra (compound partition keys)
+
 #### Node Failure Handling
 **Hinted Handoff**
 - When a node is down, another node temporarily stores its writes as "hints"
