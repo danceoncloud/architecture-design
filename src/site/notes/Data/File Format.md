@@ -22,9 +22,11 @@
 **Structure**: Rows as lines, columns separated by commas.
 **Pros**:
 - Human-readable, lightweight, universal support.
+
 **Cons**:
 - No schema enforcement, no data types (everything is a string).
 - Escaping issues (e.g., commas in text).
+
 **Use Cases**: Spreadsheets, small-scale data imports.
 
 ### JSON (JavaScript Object Notation)
@@ -32,8 +34,10 @@
 **Structure**: Key-value pairs, nested objects/arrays.
 **Pros**:
 - Flexible schema, human-readable, supports complex hierarchies.
+
 **Cons**:
 - Verbose (large file sizes), slow parsing.
+
 **Use Cases**: Web APIs (REST), NoSQL databases (MongoDB).
 
 ### XML (eXtensible Markup Language)
@@ -41,8 +45,10 @@
 **Structure**: Tag-based hierarchy with attributes.
 **Pros**:
 - Supports schemas (XSD), validation, metadata.
+
 **Cons**:
 - Extremely verbose, heavy parsing overhead.
+
 **Use Cases**: SOAP APIs, enterprise systems.
 
 ### YAML (YAML Ain’t Markup Language)
@@ -50,8 +56,10 @@
 **Structure**: Indentation-based key-value pairs.
 **Pros**:
 - Human-friendly, supports comments.
+
 **Cons**:
 - Sensitive to indentation errors.
+
 **Use Cases**: Kubernetes manifests, Docker Compose.
 
 ## Columnar Storage Formats
@@ -61,8 +69,10 @@
 **Pros**:
 - high compression (snappy, gzip), fast column scans.
 - schema evolution support.
+
 **Cons**:
 - not ideal for transactional (OLTP) workloads.
+
 **Use Case**:
 - Big Data
 - Lake house architecture
@@ -72,8 +82,10 @@
 **Structure**: Column-oriented, lightweight indexes.
 **Pros**:
 - Faster than Parquet in Hive, predicate pushdown.
+
 **Cons**:
 - Limited ecosystem support outside Hadoop.
+
 **Use Cases**:
 - Hive-based data warehouse.
 
@@ -85,8 +97,10 @@
 - Compact, supports schema evolution.
 - Backward/forward compatibility.
 - Ideal for streaming (Kafka).
+
 **Cons**:
 - Schema required for deserialization.
+
 **Use Cases**:
 - Data Pipeline
 - Event Streams
@@ -97,8 +111,10 @@
 **Pros**:
 - Extremely fast, tiny payloads
 - Backward/forward compatibility
+
 **Cons**:
 - require predefined `.proto` schema
+
 **Use Cases**:
 - gRPC APIs
 - microservices
@@ -109,8 +125,10 @@
 **Pros**:
 - Faster paring than JSON
 - smaller size
+
 **Cons**:
 - Not human-readable
+
 **Use Cases**:
 - High-throughput APIs
 - IoT devices
