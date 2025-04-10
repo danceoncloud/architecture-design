@@ -42,7 +42,5 @@ Not idea for high-throughput systems.
 
 **Single Point of Failure**:
 The crash of coordinator can stall the entire system.
-## Alternative to 2PC
-**SAGA Pattern**
-**Optimistic Concurrency Control (OCC)**
-**Eventual Consistency**
+
+
