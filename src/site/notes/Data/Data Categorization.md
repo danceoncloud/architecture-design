@@ -28,15 +28,19 @@ Data organized into a predefined schema, typically stored in **tables** with row
 ## Semi-Structured Data
 **Definition**:
 Data with partial organization, often self-describing via tags, metadata, or nested hierarchies.
+
 **Characteristics**:
 - **Schema-on-Read**: Schema is applied when data is read, not enforced during ingestion.
 - **Flexible**: Mixes structured and unstructured elements.
+
 **Examples**:
 - JSON, XML, YAML
 - Avro, Parquet (columnar formats with embedded metadata)
+
 **Storage Solutions**:
 - NoSQL Databases: MongoDB, DynamoDB
 - Data Lake: AWS S3, Azure Data Lake
+
 **Use Cases**:
 - Web APIs
 - IoT sensor data
@@ -54,12 +58,8 @@ Data with no predefined schema or organization.
 - Raw logs: server logs, clickstreams
 
 **Storage Solutions**:
-**Data Lake**: AWS S3, Hadoop HDFS
+- Data Lake: AWS S3, Hadoop HDFS
 
 **Use Cases**:
 - AI/ML training
 - Content Management Systems
-### Featured File Formats
-**Text-based:** TXT, CSV, JSON, XML, YAML
-**Columnar storage formats:** Parquet, ORC
-**Binary formats:** Avro, Protobuf, MessagePack
