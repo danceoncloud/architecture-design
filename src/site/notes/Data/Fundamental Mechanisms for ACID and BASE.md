@@ -11,7 +11,8 @@
 **[[Data/Fundamental Theory/Compensating Transactions (Sagas)\|Compensating Transactions (Sagas)]]**
 
 ### Isolation
-**Isolation Level** is the guarantee offered by different solutions and **Locking Mechanism** is how the guarantee is achieved.
+**Isolation Level** is the guarantee offered by different solutions,
+**Locking Mechanism** is how the guarantee is achieved.
 
 | **Isolation Level**        | **Dirty Reads** | **Non-Repeatable Reads** | **Phantom Reads** | **Write Skew** |
 | -------------------------- | --------------- | ------------------------ | ----------------- | -------------- |
@@ -118,7 +119,6 @@
 > - Combines multiple strategies (e.g., hash + range)
 > - Used in sophisticated systems like Cassandra (compound partition keys)
 
-#### Node Failure Handling
 **Hinted Handoff**
 
 > [!info]- Details
@@ -128,27 +128,18 @@
 > - Helps maintain eventual consistency when nodes recover
 
 ### Consistency
+[[Data/Fundamental Theory/Quorum\|Quorum]]: Balancing between Consistency and Availability.
+
 **Strong Consistency**:
-- Two-phase commit (2PC)
-- Three-phase commit (3PC)
-- State machine replication
-- Leader election
-- Sharding with consistent hashing
-- Lease-based coordination
+- [[Data/Fundamental Theory/Two-Phase Commit (2PC)\|Two-Phase commit (2PC)]]
+- [[Data/Fundamental Theory/State Machine Replication\|State Machine Replication]]
+- [[Data/Fundamental Theory/Lease-Based Coordination\|Lease-Based Coordination]]
 
 **Eventual Consistency**:
-- Sloppy quorums
-- Gossip protocols 
-- Vector clocks/version vectors
-- Read repair
-- Hinted handoff 
-- Last-Write-Wins conflict resolution
-- CRDTs (Conflict-free Replicated Data Types)
-- Anti-entropy processes
+- [[Data/Fundamental Theory/Vector Clocks and Version Vectors\|Vector Clocks and Version Vectors]]
+- [[Data/Fundamental Theory/Last-Write-Wins (LWW)\|Last-Write-Wins (LWW)]]
+- [[Data/Fundamental Theory/Gossip protocols\|Gossip protocols]]
 
-> [!warning]
-> - Some mechanisms (e.g., leases, sharding) can appear in both CP/AP systems depending on implementation.
-> - Systems often blend CP/AP traits (e.g., CockroachDB is CP but scales like AP).
 ### Related Services/Resources
 [[Data/Fundamental Theory/ACID\|ACID]]
 [[Data/Fundamental Theory/BASE\|BASE]]
