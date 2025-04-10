@@ -54,12 +54,51 @@
 **Examples**: Snowflake, Redshift, BigQuery.
 **Trade-offs**: Higher storage costs, less flexible for raw data.
 ## Data-in-Motion
-Event Streaming
-API
-Message Queues
-Real-Time ETL/Processing
-Edge/Device Data Ingestion
+### Event Streaming
+**Purpose**: Process high-velocity data in real time.
+**Key Features**:
+- Persistent, ordered event logs.
+- Scalable consumers/producers.
 
+**Use Cases**: Fraud detection, live dashboards.
+**Examples**: Apache Kafka, AWS Kinesis.
+**Trade-offs**: Requires stream-processing frameworks (e.g., Flink).
+### API
+**Purpose**: Expose or consume data programmatically.
+**Key Features**:
+ - REST (stateless), GraphQL (flexible queries), gRPC (high-performance).
+- Sync/async communication.
+
+**Use Cases**: Microservices, third-party integrations.
+**Examples**: Express.js (REST), Apollo (GraphQL).
+**Trade-offs**: Latency in synchronous APIs.
+### Message Queues
+**Purpose**: Decouple systems with asynchronous communication.
+**Key Features**:
+- Guaranteed delivery, fault tolerance.
+- Pub/sub or point-to-point models.
+
+**Use Cases**: Order processing, workload distribution.
+**Examples**: RabbitMQ, Amazon SQS.
+**Trade-offs**: Message ordering challenges.
+### Real-Time ETL/Processing
+**Purpose**: Transform data in transit (before storage).
+**Key Features**:
+- Stream processing (windowing, aggregations).
+- Low-latency transformations.
+
+**Use Cases**: Enriching clickstream data, fraud alerts.
+**Examples**: Apache Spark Streaming, AWS Glue Streaming.
+**Trade-offs**: Complexity in state management.
+### Edge/Device Data Ingestion
+**Purpose**: Collect data from distributed sources (IoT, mobile).
+**Key Features**:
+- Lightweight protocols (MQTT, CoAP).
+- Local preprocessing (edge computing).
+
+**Use Cases**: Smart factories, connected vehicles.
+**Examples**: AWS IoT Core, Azure IoT Hub.
+**Trade-offs**: Bandwidth/latency constraints.
 
 
 
