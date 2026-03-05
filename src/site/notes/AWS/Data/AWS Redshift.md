@@ -4,11 +4,11 @@
 
 ## What
 **Amazon Redshift** is a fully managed, petabyte-scale data warehouse service in the cloud.
-
 - Queries are executed through massively parallel processing on compute nodes.
 - Database tables are Columnar typed.
 - Data is compressed on storage and uncompressed when loading into RAM, to reduce disk I/O.
 - Result caching is enabled by default and cached queries are controlled by Redshift.
+- test
 
 > [!NOTE] Core Components:
 > **Redshift Serverless**: automatically provision data warehouse capacity and intelligently scales the underlying resources.\
