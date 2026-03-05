@@ -8,7 +8,6 @@
 - Database tables are Columnar typed.
 - Data is compressed on storage and uncompressed when loading into RAM, to reduce disk I/O.
 - Result caching is enabled by default and cached queries are controlled by Redshift.
-- test
 
 > [!NOTE] Core Components:
 > **Redshift Serverless**: automatically provision data warehouse capacity and intelligently scales the underlying resources.\
